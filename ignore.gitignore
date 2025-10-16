@@ -1,0 +1,79 @@
+# ========== Unity ==========
+
+# Build results
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+
+# Auto-generated VS/IDE files
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Unity cache and other
+*.apk
+*.unitypackage
+*.mdb
+*.opendb
+*.VC.db
+
+# Crash Reports
+sysinfo.txt
+
+# Exclude Unity's generated files
+MemoryCaptures/
+ScriptAssemblies/
+*.stacktrace
+
+# Unity Collaborate files
+.collab/
+
+# Rider (JetBrains)
+.idea/
+*.sln.iml
+
+# ========== Blender ==========
+
+# Blender backup and autosave files
+*.blend1
+*.blend2
+*.blend@
+*.blend#
+
+# Cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Exported files (optional — ignore if you only want source .blend)
+*.fbx
+*.obj
+*.dae
+*.gltf
+*.glb
+
+# ========== OS and Editor files ==========
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# ========== Git ==========
+.git/
+
+# ========== Logs ==========
+*.log
