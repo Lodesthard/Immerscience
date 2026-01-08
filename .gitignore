@@ -112,7 +112,7 @@ __pycache__/
 *.pyo
 
 # Exported files (optional — ignore if you only want source .blend)
-*.fbx
+#*.fbx
 *.obj
 *.dae
 *.gltf
