@@ -20,3 +20,7 @@ Ceci devrait afficher respectivement :
 
 Library/
 Temp/
+
+# WARNING : Unity Version
+
+2022.3.9f1
