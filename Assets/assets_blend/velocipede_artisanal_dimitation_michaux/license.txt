@@ -1,0 +1,11 @@
+Model Information:
+* title:	Vélocipède artisanal d'imitation Michaux
+* source:	https://sketchfab.com/3d-models/velocipede-artisanal-dimitation-michaux-a4f6d139cbff485484d4f085167e9af2
+* author:	Alienor.org, Conseil des musées (https://sketchfab.com/alienor.org)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Vélocipède artisanal d'imitation Michaux" (https://sketchfab.com/3d-models/velocipede-artisanal-dimitation-michaux-a4f6d139cbff485484d4f085167e9af2) by Alienor.org, Conseil des musées (https://sketchfab.com/alienor.org) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lamborghini Countach (MUSE Version)
+* source:	https://sketchfab.com/3d-models/lamborghini-countach-muse-version-f5ff9eefeacc4717be8e5f73d7b6c56d
+* author:	Proj_Big _Brain (https://sketchfab.com/547330)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lamborghini Countach (MUSE Version)" (https://sketchfab.com/3d-models/lamborghini-countach-muse-version-f5ff9eefeacc4717be8e5f73d7b6c56d) by Proj_Big _Brain (https://sketchfab.com/547330) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Octa Asa 6
+* source:	https://sketchfab.com/3d-models/octa-asa-6-94d189b3ed5b4adaa8a5eb7f3d5cba7b
+* author:	sebaszayas (https://sketchfab.com/sebaszayas)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Octa Asa 6" (https://sketchfab.com/3d-models/octa-asa-6-94d189b3ed5b4adaa8a5eb7f3d5cba7b) by sebaszayas (https://sketchfab.com/sebaszayas) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

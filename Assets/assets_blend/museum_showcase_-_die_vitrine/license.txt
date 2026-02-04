@@ -1,0 +1,11 @@
+Model Information:
+* title:	museum_showcase_-_die_vitrine
+* source:	https://sketchfab.com/3d-models/museum-showcase---die-vitrine-873b5996b67f43fcb7eb66114d0ddd80
+* author:	Ha Van (https://sketchfab.com/nganha2169)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "museum_showcase_-_die_vitrine" (https://sketchfab.com/3d-models/museum-showcase---die-vitrine-873b5996b67f43fcb7eb66114d0ddd80) by Ha Van (https://sketchfab.com/nganha2169) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

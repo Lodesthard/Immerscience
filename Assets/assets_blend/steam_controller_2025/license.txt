@@ -1,0 +1,11 @@
+Model Information:
+* title:	Steam Controller 2025
+* source:	https://sketchfab.com/3d-models/steam-controller-2025-fe10b1da83e54dae953f15d898ad6197
+* author:	Ranguel (https://sketchfab.com/Ranguel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Steam Controller 2025" (https://sketchfab.com/3d-models/steam-controller-2025-fe10b1da83e54dae953f15d898ad6197) by Ranguel (https://sketchfab.com/Ranguel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

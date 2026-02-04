@@ -1,0 +1,11 @@
+Model Information:
+* title:	Vitrine
+* source:	https://sketchfab.com/3d-models/vitrine-a24c89912e8849a0865eaed0020c1515
+* author:	sara3dbear (https://sketchfab.com/sara3dbear)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Vitrine" (https://sketchfab.com/3d-models/vitrine-a24c89912e8849a0865eaed0020c1515) by sara3dbear (https://sketchfab.com/sara3dbear) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
