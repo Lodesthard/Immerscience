@@ -113,10 +113,6 @@ __pycache__/
 
 # Exported files (optional — ignore if you only want source .blend)
 #*.fbx
-*.obj
-*.dae
-*.gltf
-*.glb
 
 # ========== OS and Editor files ==========
 
