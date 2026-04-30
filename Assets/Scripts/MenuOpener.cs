@@ -25,7 +25,7 @@ public class MenuOpener : MonoBehaviour
             Vector3 forward = head.forward;
             forward.y = 0; // pour éviter de viser vers le haut ou le bas
 
-            menu.transform.position = head.position + forward.normalized * 0.01f;
+            menu.transform.position = head.position + forward.normalized * 2.5f;
             menu.transform.rotation = Quaternion.LookRotation(forward);
         }
 
