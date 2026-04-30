@@ -1586,6 +1586,15 @@
                     "processors": "",
                     "interactions": "Press",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ToggleLasers",
+                    "type": "Button",
+                    "id": "a2b3c4d5-e6f7-4890-abcd-1234567890ab",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1762,6 +1771,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "OpenMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b3c4d5e6-f7a8-4901-bcde-234567890abc",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "ToggleLasers",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

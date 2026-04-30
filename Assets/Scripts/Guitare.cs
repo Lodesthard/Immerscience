@@ -25,9 +25,9 @@ public class Guitare : MonoBehaviour
 
     void Update()
     {
-        if (secondInteractor != null && grab.selectingInteractor != null)
+        if (secondInteractor != null && grab.interactorsSelecting != null)
         {
-            Transform firstHand = grab.selectingInteractor.transform;
+            Transform firstHand = grab.interactorsSelecting[0].transform;
             Transform secondHand = secondInteractor.transform;
 
             Vector3 direction = secondHand.position - firstHand.position;
