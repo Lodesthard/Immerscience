@@ -4,36 +4,37 @@ using UnityEngine.XR.Interaction.Toolkit;
 [RequireComponent(typeof(XRGrabInteractable))]
 public class TwoHandPlayPose : MonoBehaviour
 {
-    [Header("Cible (tête du joueur)")]
-    [Tooltip("Glisser la Main Camera (tête XR). Si vide, le script tente de la retrouver via Camera.main.")]
-    public Transform playerHead;
+    [Header("Grip Points (sous-objets vides)")]
+    [Tooltip("Point où la main gauche se positionne. Créer un GameObject enfant vide et le glisser ici.")]
+    public Transform leftGripPoint;
 
-    [Header("Pose de jeu (relative à la tête)")]
-    [Tooltip("Décalage local en mètres par rapport à la caméra du joueur.")]
-    public Vector3 localPositionOffset = new Vector3(0.2f, -0.3f, 0.4f);
+    [Tooltip("Point où la main droite se positionne. Créer un GameObject enfant vide et le glisser ici.")]
+    public Transform rightGripPoint;
 
-    [Tooltip("Rotation locale (en degrés) par rapport à la caméra du joueur.")]
-    public Vector3 localEulerRotation = Vector3.zero;
+    [Header("Snap")]
+    [Tooltip("Vitesse de snap vers la pose. Plus haut = plus rapide.")]
+    public float snapSpeed = 15f;
 
-    [Tooltip("Vitesse de snap vers la pose de jeu. Plus haut = plus rapide.")]
-    public float snapSpeed = 12f;
-
-    [Header("Audio (déclenché à la prise à 2 mains)")]
-    [Tooltip("Si vide, un AudioSource sera ajouté automatiquement.")]
+    [Header("Audio")]
+    [Tooltip("Si vide, AudioSource ajouté automatiquement.")]
     public AudioSource audioSource;
 
-    [Tooltip("Le son à jouer quand l'objet est saisi à 2 mains. Configurable dans l'inspecteur.")]
+    [Tooltip("Son joué quand l'objet est saisi à 2 mains.")]
     public AudioClip twoHandGrabSound;
 
     [Range(0f, 1f)] public float volume = 1f;
 
-    [Tooltip("Désactive la physique (rigidbody kinematic) tant que l'objet est tenu à 2 mains.")]
+    [Tooltip("Désactive la physique (kinematic) pendant la tenue à 2 mains.")]
     public bool freezePhysicsWhileHeld = true;
 
     private XRGrabInteractable grab;
     private Rigidbody rb;
     private bool twoHandActive;
     private bool prevIsKinematic;
+
+    // Positions monde cibles recalculées à chaque LateUpdate
+    private Vector3 targetPosition;
+    private Quaternion targetRotation;
 
     void Awake()
     {
@@ -48,9 +49,6 @@ public class TwoHandPlayPose : MonoBehaviour
             audioSource.playOnAwake = false;
             audioSource.spatialBlend = 1f;
         }
-
-        if (playerHead == null && Camera.main != null)
-            playerHead = Camera.main.transform;
 
         grab.selectEntered.AddListener(OnSelectEntered);
         grab.selectExited.AddListener(OnSelectExited);
@@ -94,22 +92,66 @@ public class TwoHandPlayPose : MonoBehaviour
     void PlayGrabSound()
     {
         if (twoHandGrabSound == null) return;
-
-        if (audioSource != null)
-            audioSource.PlayOneShot(twoHandGrabSound, volume);
-        else
-            AudioSource.PlayClipAtPoint(twoHandGrabSound, transform.position, volume);
+        audioSource.PlayOneShot(twoHandGrabSound, volume);
     }
 
     void LateUpdate()
     {
-        if (!twoHandActive || playerHead == null) return;
+        if (!twoHandActive) return;
+        if (grab.interactorsSelecting.Count < 2) return;
+        if (leftGripPoint == null || rightGripPoint == null) return;
 
-        Vector3 targetPos = playerHead.TransformPoint(localPositionOffset);
-        Quaternion targetRot = playerHead.rotation * Quaternion.Euler(localEulerRotation);
+        var interactors = grab.interactorsSelecting;
+
+        // Détermine quelle main est gauche / droite selon le tag ou le nom
+        Transform handA = (interactors[0] as MonoBehaviour)?.transform;
+        Transform handB = (interactors[1] as MonoBehaviour)?.transform;
+
+        if (handA == null || handB == null) return;
+
+        Transform leftHand, rightHand;
+        if (IsLeftHand(interactors[0]))
+        {
+            leftHand = handA;
+            rightHand = handB;
+        }
+        else
+        {
+            leftHand = handB;
+            rightHand = handA;
+        }
+
+        // On veut : leftGripPoint monde == leftHand.position, rightGripPoint monde == rightHand.position
+        // Axe entre les deux grip points (local) -> axe entre les deux mains (monde)
+        Vector3 gripAxis = rightGripPoint.position - leftGripPoint.position;    // monde actuel
+        Vector3 handAxis = rightHand.position - leftHand.position;             // monde cible
+
+        // Rotation à appliquer à l'objet pour aligner gripAxis sur handAxis
+        Quaternion alignRot = Quaternion.identity;
+        if (gripAxis.sqrMagnitude > 0.0001f && handAxis.sqrMagnitude > 0.0001f)
+            alignRot = Quaternion.FromToRotation(gripAxis.normalized, handAxis.normalized);
+
+        // Après rotation, le centre des grips doit coïncider avec le centre des mains
+        Vector3 gripCenter = (leftGripPoint.position + rightGripPoint.position) * 0.5f;
+        Vector3 handCenter = (leftHand.position + rightHand.position) * 0.5f;
+        Vector3 posOffset = handCenter - gripCenter;
+
+        targetPosition = transform.position + posOffset;
+        targetRotation = alignRot * transform.rotation;
 
         float t = Mathf.Clamp01(Time.deltaTime * snapSpeed);
-        transform.position = Vector3.Lerp(transform.position, targetPos, t);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, t);
+        transform.position = Vector3.Lerp(transform.position, targetPosition, t);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, t);
+    }
+
+    static bool IsLeftHand(IXRSelectInteractor interactor)
+    {
+        var mb = interactor as MonoBehaviour;
+        if (mb == null) return false;
+        string n = mb.gameObject.name.ToLower();
+        if (n.Contains("left")) return true;
+        if (n.Contains("right")) return false;
+        // Fallback : tag
+        return mb.CompareTag("LeftHand");
     }
 }
