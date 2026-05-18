@@ -26,6 +26,10 @@ public class AscenseurAutomatique : MonoBehaviour
     private bool voyageEnCours = false;
     private bool estOuvert = false;
 
+    // 0 = fermé, 1 = ouvert. Progression linéaire dans le temps : l'ouverture
+    // est l'exact inverse temporel de la fermeture (même vitesse, easing symétrique).
+    private float ouvertureProgress = 0f;
+
     void Start()
     {
         if (porteGauche) posInitialeGauche = porteGauche.localPosition;
@@ -44,23 +48,32 @@ public class AscenseurAutomatique : MonoBehaviour
 
         float distance = Vector3.Distance(transform.position, joueur.position);
 
-        if (distance < distanceDepartVoyage)
+        if (distance < distanceDepartVoyage && !voyageEnCours)
         {
             StartCoroutine(SequenceVoyage());
             return;
         }
 
-        estOuvert = (distance < distanceOuverture);
+        if (!estOuvert && distance < distanceOuverture)
+            estOuvert = true;
+        else if (estOuvert && distance > distanceOuverture + 1.5f)
+            estOuvert = false;
         ActualiserMouvementPortes();
     }
 
     void ActualiserMouvementPortes()
     {
-        Vector3 cibleG = estOuvert ? posInitialeGauche + translationGauche : posInitialeGauche;
-        Vector3 cibleD = estOuvert ? posInitialeDroite + translationDroite : posInitialeDroite;
+        // Progression linéaire à vitesse constante vers la cible (1=ouvert, 0=fermé).
+        // MoveTowards => même durée à l'ouverture qu'à la fermeture.
+        float cible = estOuvert ? 1f : 0f;
+        ouvertureProgress = Mathf.MoveTowards(ouvertureProgress, cible, Time.deltaTime * vitesse);
 
-        porteGauche.localPosition = Vector3.Lerp(porteGauche.localPosition, cibleG, Time.deltaTime * vitesse);
-        porteDroite.localPosition = Vector3.Lerp(porteDroite.localPosition, cibleD, Time.deltaTime * vitesse);
+        // SmoothStep est symétrique : SmoothStep(1-p) == 1-SmoothStep(p).
+        // => la courbe d'ouverture est l'exact miroir temporel de la fermeture.
+        float k = Mathf.SmoothStep(0f, 1f, ouvertureProgress);
+
+        porteGauche.localPosition = posInitialeGauche + translationGauche * k;
+        porteDroite.localPosition = posInitialeDroite + translationDroite * k;
     }
 
     IEnumerator SequenceVoyage()
@@ -102,7 +115,10 @@ public class AscenseurAutomatique : MonoBehaviour
             }
         }
 
+        // Attendre que le joueur soit bien arrivé (position stabilisée)
         yield return new WaitForSeconds(0.5f);
-        estOuvert = true; // Ouverture automatique à l'arrivée
+
+        estOuvert = true;
+        voyageEnCours = false;
     }
 }

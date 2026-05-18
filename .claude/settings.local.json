@@ -10,7 +10,11 @@
       "mcp__ai-game-developer__gameobject-component-destroy",
       "mcp__ai-game-developer__script-execute",
       "mcp__ai-game-developer__console-get-logs",
-      "mcp__ai-game-developer__assets-refresh"
+      "mcp__ai-game-developer__assets-refresh",
+      "Bash(python3 -c ' *)",
+      "mcp__ai-game-developer__gameobject-create",
+      "Bash(npx unity-mcp-cli *)",
+      "mcp__ai-game-developer__screenshot-scene-view"
     ]
   }
 }
