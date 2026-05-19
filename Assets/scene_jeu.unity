@@ -780,6 +780,33 @@ MonoBehaviour:
   toggleLasersAction: {fileID: -2315898302510181553, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   leftRayInteractor: {fileID: 161762823}
   rightRayInteractor: {fileID: 1893339200}
+--- !u!54 &96328745
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96328719}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &98655668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9014170783809206335, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
@@ -1890,6 +1917,7 @@ GameObject:
   - component: {fileID: 255117534}
   - component: {fileID: 255117533}
   - component: {fileID: 255117532}
+  - component: {fileID: 255117535}
   m_Layer: 0
   m_Name: Quad3
   m_TagString: Untagged
@@ -1984,6 +2012,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255117530}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &255117535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255117530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d787c669a2984289f49dce3717366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalMaterial: {fileID: 2100000, guid: b7f50e9c252996d42ac83887b74814da, type: 2}
+  creepyMaterial: {fileID: 2100000, guid: 2a5d5f77d5c7fd643bc888f77f8fa14e, type: 2}
+  renderer: {fileID: 255117533}
 --- !u!1001 &265995848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2669,9 +2712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093b8b5c1b4468a45bbf9ec1cd3c06a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHead: {fileID: 0}
-  localPositionOffset: {x: 0.15, y: -0.4, z: 0.3}
-  localEulerRotation: {x: 15, y: 15, z: 0}
+  leftGripPoint: {fileID: 0}
+  rightGripPoint: {fileID: 0}
   snapSpeed: 12
   audioSource: {fileID: 0}
   twoHandGrabSound: {fileID: 0}
@@ -2703,6 +2745,59 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01, y: 0.010000001, z: 0.009999999}
   m_Center: {x: 0, y: -0.000000029802322, z: -0.000000007450581}
+--- !u!1 &416594208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416594209}
+  - component: {fileID: 416594210}
+  m_Layer: 0
+  m_Name: Etage2Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &416594209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416594208}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.589132, y: 6.8230543, z: 0.4653835}
+  m_LocalScale: {x: 0.20346001, y: 0.3556064, z: 0.18244307}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1069305887}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &416594210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416594208}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &424292520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4160,6 +4255,7 @@ GameObject:
   - component: {fileID: 642048731}
   - component: {fileID: 642048732}
   - component: {fileID: 642048733}
+  - component: {fileID: 642048734}
   m_Layer: 0
   m_Name: CreepyZone
   m_TagString: Untagged
@@ -4176,8 +4272,8 @@ Transform:
   m_GameObject: {fileID: 642048730}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4272657, y: 4.1, z: -1.57}
-  m_LocalScale: {x: 0.20346001, y: 0.3556064, z: 0.18244307}
+  m_LocalPosition: {x: 0.17, y: 4.1, z: -1.57}
+  m_LocalScale: {x: 0.32, y: 0.63, z: 0.21}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1069305887}
@@ -4201,7 +4297,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 67.3, y: 26.5, z: 124.9}
+  m_Size: {x: 33.49, y: 10, z: 116.47}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &642048733
 MonoBehaviour:
@@ -4213,6 +4309,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0ae430a6d38b9b45a54c7cb52887a62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsInsideCreepyZone: 0
+--- !u!114 &642048734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642048730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74a692889834f546b6cae7b0053d6eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &646044331 stripped
@@ -4459,9 +4568,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093b8b5c1b4468a45bbf9ec1cd3c06a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHead: {fileID: 0}
-  localPositionOffset: {x: 0.05, y: -0.35, z: 0.4}
-  localEulerRotation: {x: -15, y: -90, z: -30}
+  leftGripPoint: {fileID: 0}
+  rightGripPoint: {fileID: 0}
   snapSpeed: 12
   audioSource: {fileID: 0}
   twoHandGrabSound: {fileID: 0}
@@ -6725,8 +6833,9 @@ GameObject:
   - component: {fileID: 889922312}
   - component: {fileID: 889922311}
   - component: {fileID: 889922310}
+  - component: {fileID: 889922313}
   m_Layer: 0
-  m_Name: Quad6 (1)
+  m_Name: Quad7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6819,6 +6928,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889922308}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &889922313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889922308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d787c669a2984289f49dce3717366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalMaterial: {fileID: 2100000, guid: a4c40de7089440d4ba066afa97394bac, type: 2}
+  creepyMaterial: {fileID: 2100000, guid: 3c5623cec6058f54bbf0cdac43f1fbe7, type: 2}
+  renderer: {fileID: 889922311}
 --- !u!1001 &894690960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7793,6 +7917,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5425331572631767777, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1249597254}
+    - targetCorrespondingSourceObject: {fileID: 5425331572631767777, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 416594209}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
 --- !u!4 &1069305887 stripped
@@ -9110,7 +9237,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bad2545ea40bc6840869561888c97f60, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -9634,9 +9761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093b8b5c1b4468a45bbf9ec1cd3c06a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHead: {fileID: 0}
-  localPositionOffset: {x: 0, y: -0.25, z: 0.35}
-  localEulerRotation: {x: -25, y: 0, z: 0}
+  leftGripPoint: {fileID: 0}
+  rightGripPoint: {fileID: 0}
   snapSpeed: 12
   audioSource: {fileID: 0}
   twoHandGrabSound: {fileID: 0}
@@ -10478,6 +10604,7 @@ GameObject:
   - component: {fileID: 1383577647}
   - component: {fileID: 1383577646}
   - component: {fileID: 1383577645}
+  - component: {fileID: 1383577648}
   m_Layer: 0
   m_Name: Quad2
   m_TagString: Untagged
@@ -10572,6 +10699,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383577643}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1383577648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383577643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d787c669a2984289f49dce3717366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalMaterial: {fileID: 2100000, guid: b84d86778f9e62746890958165231cb6, type: 2}
+  creepyMaterial: {fileID: 2100000, guid: 82b51dc7a6e51cd4e9a256ac8a9e541b, type: 2}
+  renderer: {fileID: 1383577646}
 --- !u!1001 &1386705732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12099,9 +12241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093b8b5c1b4468a45bbf9ec1cd3c06a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHead: {fileID: 0}
-  localPositionOffset: {x: 0.15, y: -0.4, z: 0.3}
-  localEulerRotation: {x: 15, y: 15, z: 0}
+  leftGripPoint: {fileID: 0}
+  rightGripPoint: {fileID: 0}
   snapSpeed: 12
   audioSource: {fileID: 0}
   twoHandGrabSound: {fileID: 0}
@@ -12355,6 +12496,7 @@ GameObject:
   - component: {fileID: 1654175779}
   - component: {fileID: 1654175778}
   - component: {fileID: 1654175777}
+  - component: {fileID: 1654175780}
   m_Layer: 0
   m_Name: Quad5
   m_TagString: Untagged
@@ -12449,6 +12591,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654175775}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1654175780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654175775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d787c669a2984289f49dce3717366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalMaterial: {fileID: 2100000, guid: 2d39390447c3c6c4888149972d73e1d9, type: 2}
+  creepyMaterial: {fileID: 2100000, guid: 379dfeb10516424459671e0ad19cdd8c, type: 2}
+  renderer: {fileID: 1654175778}
 --- !u!1 &1662455051 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3747444286459136214, guid: 5f936e75b55cb7e4aa66efea37a55df5, type: 3}
@@ -12668,6 +12825,7 @@ GameObject:
   - component: {fileID: 1674298536}
   - component: {fileID: 1674298535}
   - component: {fileID: 1674298534}
+  - component: {fileID: 1674298537}
   m_Layer: 0
   m_Name: Quad4
   m_TagString: Untagged
@@ -12762,6 +12920,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674298532}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1674298537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674298532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d787c669a2984289f49dce3717366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalMaterial: {fileID: 2100000, guid: 33e0acfa40c167545840f32917f91ced, type: 2}
+  creepyMaterial: {fileID: 2100000, guid: 4ed3d9e3041a78b41b88b349b0d1a3a7, type: 2}
+  renderer: {fileID: 1674298535}
 --- !u!4 &1680099972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2774220344278030320, guid: 479f849918f70904aa75293e022acfd9, type: 3}
@@ -13677,6 +13850,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7696548424635294048, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 96328739}
+    - targetCorrespondingSourceObject: {fileID: 7696548424635294048, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 96328745}
     - targetCorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1731298972}
@@ -14941,6 +15117,7 @@ GameObject:
   - component: {fileID: 1885712252}
   - component: {fileID: 1885712251}
   - component: {fileID: 1885712250}
+  - component: {fileID: 1885712253}
   m_Layer: 0
   m_Name: Quad6
   m_TagString: Untagged
@@ -15035,6 +15212,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885712248}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1885712253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885712248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d787c669a2984289f49dce3717366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalMaterial: {fileID: 2100000, guid: d621b06b75b93ce48b1e8463d44f90c8, type: 2}
+  creepyMaterial: {fileID: 2100000, guid: 6fd06d2c8dcab79429901b18ecdb1a16, type: 2}
+  renderer: {fileID: 1885712251}
 --- !u!4 &1893210048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9014170785475729501, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
@@ -15852,6 +16044,7 @@ GameObject:
   - component: {fileID: 1963502142}
   - component: {fileID: 1963502141}
   - component: {fileID: 1963502140}
+  - component: {fileID: 1963502143}
   m_Layer: 0
   m_Name: Quad1
   m_TagString: Untagged
@@ -15946,6 +16139,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963502138}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1963502143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963502138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85d787c669a2984289f49dce3717366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalMaterial: {fileID: 2100000, guid: eb7d775554b55bb4994cb74c4236a9ea, type: 2}
+  creepyMaterial: {fileID: 2100000, guid: dc3de555f4e19604195b39c7e74e9d65, type: 2}
+  renderer: {fileID: 1963502141}
 --- !u!1 &1970631435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3412649390972202448, guid: 895f6f3c2d334633b5800312285058d2, type: 3}

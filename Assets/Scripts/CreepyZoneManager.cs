@@ -3,23 +3,27 @@ using UnityEngine;
 public class CreepyZoneManager : MonoBehaviour
 {
     public static CreepyZoneManager Instance;
-
-    public bool IsInsideCreepyZone { get; private set; } = false;
+    public bool IsInsideCreepyZone = false;
 
     private void Awake()
     {
         Instance = this;
+        Debug.Log("✅ CreepyZoneManager LOADED");
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void Update()
     {
-        if (other.CompareTag("Player"))
+        if (Camera.main == null) return;
+
+        float dist = Vector3.Distance(transform.position, Camera.main.transform.position);
+
+        if (dist < 20f)
+        {
             IsInsideCreepyZone = true;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        }
+        else
+        {
             IsInsideCreepyZone = false;
+        }
     }
 }

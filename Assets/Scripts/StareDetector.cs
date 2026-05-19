@@ -15,6 +15,8 @@ public class StareDetector : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 50f))
         {
+            Debug.Log("Hit: " + hit.collider.gameObject.name);
+
             if (hit.collider.TryGetComponent<PaintingStareEffect>(out var painting))
             {
                 painting.OnStare(Time.deltaTime);
@@ -28,6 +30,7 @@ public class StareDetector : MonoBehaviour
                 }
                 return;
             }
+
         }
 
         // Looked away

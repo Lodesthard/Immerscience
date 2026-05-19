@@ -7,7 +7,6 @@ public class PaintingStareEffect : MonoBehaviour
     public Renderer renderer;
 
     private float stareTime = 0f;
-    private const float STARE_THRESHOLD = 3.5f;
     private bool isCreepy = false;
 
     void Start()
@@ -21,18 +20,16 @@ public class PaintingStareEffect : MonoBehaviour
 
     public void OnStare(float deltaTime)
     {
-        if (!CreepyZoneManager.Instance || !CreepyZoneManager.Instance.IsInsideCreepyZone)
-        {
-            if (isCreepy) DeactivateCreepy();
-            stareTime = 0f;
-            return;
-        }
-
         stareTime += deltaTime;
 
-        if (stareTime >= STARE_THRESHOLD && !isCreepy)
+        if (stareTime >= 2.0f && !isCreepy)   // 2 secondes seulement pour tester
         {
-            ActivateCreepy();
+            isCreepy = true;
+            if (creepyMaterial != null && renderer != null)
+            {
+                renderer.material = creepyMaterial;
+                Debug.Log("🖼 CREEPY EFFECT ACTIVATED on " + gameObject.name);
+            }
         }
     }
 
@@ -41,27 +38,10 @@ public class PaintingStareEffect : MonoBehaviour
         stareTime = 0f;
         if (isCreepy)
         {
-            DeactivateCreepy();
+            isCreepy = false;
+            if (normalMaterial != null && renderer != null)
+                renderer.material = normalMaterial;
+            Debug.Log("🖼 Returned to normal on " + gameObject.name);
         }
-    }
-
-    public void ActivateCreepy()
-    {
-        isCreepy = true;
-        if (creepyMaterial != null && renderer != null)
-            renderer.material = creepyMaterial;
-
-        if (AudioManager.Instance != null)
-            AudioManager.Instance.StartCreepyDistortion();
-    }
-
-    public void DeactivateCreepy()
-    {
-        isCreepy = false;
-        if (normalMaterial != null && renderer != null)
-            renderer.material = normalMaterial;
-
-        if (AudioManager.Instance != null)
-            AudioManager.Instance.ReturnNormalMusic();
     }
 }
