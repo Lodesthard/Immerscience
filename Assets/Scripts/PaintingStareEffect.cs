@@ -6,58 +6,44 @@ public class PaintingStareEffect : MonoBehaviour
     public Material creepyMaterial;
     public Renderer renderer;
 
-    [Header("Settings")]
     public float stareThreshold = 3.0f;
-    public float meltSpeed = 0.4f;
     public bool enableGlitch = true;
 
     private float stareTime = 0f;
-    private float meltAmount = 0f;
+    private bool isCreepy = false;
 
     private void Start()
     {
         if (renderer == null)
             renderer = GetComponent<Renderer>();
 
-        renderer.material = normalMaterial;
+        if (normalMaterial != null)
+            renderer.material = normalMaterial;
     }
 
     public void OnStare(float deltaTime)
     {
         stareTime += deltaTime;
 
-        if (stareTime >= stareThreshold)
+        if (stareTime >= stareThreshold && !isCreepy)
         {
-            meltAmount = Mathf.MoveTowards(meltAmount, 1f, meltSpeed * deltaTime);
-
-            // Glitch effect
-            if (enableGlitch && Random.value < 0.08f)
-            {
+            isCreepy = true;
+            if (creepyMaterial != null)
                 renderer.material = creepyMaterial;
-                Invoke("RevertMaterial", Random.Range(0.08f, 0.25f));
-            }
-        }
-    }
 
-    private void RevertMaterial()
-    {
-        if (meltAmount < 0.95f)
-            renderer.material = normalMaterial;
+            Debug.Log(gameObject.name + " → CREEPY");
+        }
     }
 
     public void OnLookAway()
     {
         stareTime = 0f;
-        meltAmount = 0f;
-        renderer.material = normalMaterial;
-    }
-
-    // Simple version for now - full switch when fully melted
-    private void Update()
-    {
-        if (meltAmount > 0.92f)
+        if (isCreepy)
         {
-            renderer.material = creepyMaterial;
+            isCreepy = false;
+            if (normalMaterial != null)
+                renderer.material = normalMaterial;
+            Debug.Log(gameObject.name + " → Normal");
         }
     }
 }

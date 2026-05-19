@@ -15,7 +15,6 @@ public class CreepyZoneManager : MonoBehaviour
         if (Camera.main == null) return;
 
         float dist = Vector3.Distance(transform.position, Camera.main.transform.position);
-
         IsInsideCreepyZone = (dist < 18f);
     }
 }
