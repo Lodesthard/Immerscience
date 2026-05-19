@@ -2026,7 +2026,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: b7f50e9c252996d42ac83887b74814da, type: 2}
   creepyMaterial: {fileID: 2100000, guid: 2a5d5f77d5c7fd643bc888f77f8fa14e, type: 2}
-  renderer: {fileID: 255117533}
+  renderer: {fileID: 0}
+  stareThreshold: 3
+  meltSpeed: 0.45
 --- !u!1001 &265995848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2756,7 +2758,7 @@ GameObject:
   - component: {fileID: 416594209}
   - component: {fileID: 416594210}
   m_Layer: 0
-  m_Name: Etage2Trigger
+  m_Name: Etage2MusicTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2771,7 +2773,7 @@ Transform:
   m_GameObject: {fileID: 416594208}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.589132, y: 6.8230543, z: 0.4653835}
+  m_LocalPosition: {x: 0.83, y: 2.3, z: -2.71}
   m_LocalScale: {x: 0.20346001, y: 0.3556064, z: 0.18244307}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2796,7 +2798,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 80.1, y: 17.8, z: 186}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &424292520
 PrefabInstance:
@@ -6942,7 +6944,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: a4c40de7089440d4ba066afa97394bac, type: 2}
   creepyMaterial: {fileID: 2100000, guid: 3c5623cec6058f54bbf0cdac43f1fbe7, type: 2}
-  renderer: {fileID: 889922311}
+  renderer: {fileID: 0}
+  stareThreshold: 3
+  meltSpeed: 0.45
 --- !u!1001 &894690960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10713,7 +10717,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: b84d86778f9e62746890958165231cb6, type: 2}
   creepyMaterial: {fileID: 2100000, guid: 82b51dc7a6e51cd4e9a256ac8a9e541b, type: 2}
-  renderer: {fileID: 1383577646}
+  renderer: {fileID: 0}
+  stareThreshold: 3
+  meltSpeed: 0.45
 --- !u!1001 &1386705732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12605,7 +12611,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: 2d39390447c3c6c4888149972d73e1d9, type: 2}
   creepyMaterial: {fileID: 2100000, guid: 379dfeb10516424459671e0ad19cdd8c, type: 2}
-  renderer: {fileID: 1654175778}
+  renderer: {fileID: 0}
+  stareThreshold: 3
+  meltSpeed: 0.45
 --- !u!1 &1662455051 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3747444286459136214, guid: 5f936e75b55cb7e4aa66efea37a55df5, type: 3}
@@ -12934,7 +12942,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: 33e0acfa40c167545840f32917f91ced, type: 2}
   creepyMaterial: {fileID: 2100000, guid: 4ed3d9e3041a78b41b88b349b0d1a3a7, type: 2}
-  renderer: {fileID: 1674298535}
+  renderer: {fileID: 0}
+  stareThreshold: 3
+  meltSpeed: 0.45
 --- !u!4 &1680099972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2774220344278030320, guid: 479f849918f70904aa75293e022acfd9, type: 3}
@@ -15226,7 +15236,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: d621b06b75b93ce48b1e8463d44f90c8, type: 2}
   creepyMaterial: {fileID: 2100000, guid: 6fd06d2c8dcab79429901b18ecdb1a16, type: 2}
-  renderer: {fileID: 1885712251}
+  renderer: {fileID: 0}
+  stareThreshold: 3
+  meltSpeed: 0.45
 --- !u!4 &1893210048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9014170785475729501, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
@@ -16153,7 +16165,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: eb7d775554b55bb4994cb74c4236a9ea, type: 2}
   creepyMaterial: {fileID: 2100000, guid: dc3de555f4e19604195b39c7e74e9d65, type: 2}
-  renderer: {fileID: 1963502141}
+  renderer: {fileID: 0}
+  stareThreshold: 3
+  meltSpeed: 0.45
 --- !u!1 &1970631435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3412649390972202448, guid: 895f6f3c2d334633b5800312285058d2, type: 3}

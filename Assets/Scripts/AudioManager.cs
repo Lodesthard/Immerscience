@@ -9,31 +9,23 @@ public class AudioManager : MonoBehaviour
     public AudioMixerSnapshot normalSnapshot;
     public AudioMixerSnapshot creepySnapshot;
 
-    private bool isPlaying = false;
-
     private void Awake()
     {
         Instance = this;
     }
 
-    // Call this when player enters étage 2
     public void StartMusic()
     {
-        if (musicSource != null && !isPlaying)
-        {
-            musicSource.Play();
-            isPlaying = true;
-            normalSnapshot.TransitionTo(0.1f);
-        }
+        if (musicSource != null) musicSource.Play();
     }
 
     public void StartCreepyDistortion()
     {
-        creepySnapshot?.TransitionTo(0.8f);
+        creepySnapshot?.TransitionTo(1.2f);
     }
 
     public void ReturnNormalMusic()
     {
-        normalSnapshot?.TransitionTo(1.2f);
+        normalSnapshot?.TransitionTo(1.5f);
     }
 }

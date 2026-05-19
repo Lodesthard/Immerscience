@@ -6,29 +6,35 @@ public class PaintingStareEffect : MonoBehaviour
     public Material creepyMaterial;
     public Renderer renderer;
 
+    public float stareThreshold = 3.0f;
+    public float meltSpeed = 0.5f;
+
     private float stareTime = 0f;
+    private float meltAmount = 0f;
     private bool isCreepy = false;
 
-    void Start()
+    private void Start()
     {
         if (renderer == null)
             renderer = GetComponent<Renderer>();
 
-        if (normalMaterial != null)
-            renderer.material = normalMaterial;
+        renderer.material = normalMaterial;
+        Debug.Log(gameObject.name + " initialized");
     }
 
     public void OnStare(float deltaTime)
     {
         stareTime += deltaTime;
 
-        if (stareTime >= 2.0f && !isCreepy)   // 2 secondes seulement pour tester
+        if (stareTime >= stareThreshold)
         {
-            isCreepy = true;
-            if (creepyMaterial != null && renderer != null)
+            meltAmount = Mathf.MoveTowards(meltAmount, 1f, meltSpeed * deltaTime);
+
+            if (meltAmount >= 0.98f && !isCreepy)
             {
+                isCreepy = true;
                 renderer.material = creepyMaterial;
-                Debug.Log("🖼 CREEPY EFFECT ACTIVATED on " + gameObject.name);
+                Debug.Log(gameObject.name + " → FULL CREEPY");
             }
         }
     }
@@ -36,12 +42,13 @@ public class PaintingStareEffect : MonoBehaviour
     public void OnLookAway()
     {
         stareTime = 0f;
+        meltAmount = 0f;
+
         if (isCreepy)
         {
             isCreepy = false;
-            if (normalMaterial != null && renderer != null)
-                renderer.material = normalMaterial;
-            Debug.Log("🖼 Returned to normal on " + gameObject.name);
+            renderer.material = normalMaterial;
+            Debug.Log(gameObject.name + " → Back to normal");
         }
     }
 }

@@ -8,7 +8,6 @@ public class CreepyZoneManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        Debug.Log("✅ CreepyZoneManager LOADED");
     }
 
     private void Update()
@@ -17,13 +16,6 @@ public class CreepyZoneManager : MonoBehaviour
 
         float dist = Vector3.Distance(transform.position, Camera.main.transform.position);
 
-        if (dist < 20f)
-        {
-            IsInsideCreepyZone = true;
-        }
-        else
-        {
-            IsInsideCreepyZone = false;
-        }
+        IsInsideCreepyZone = (dist < 18f);
     }
 }
