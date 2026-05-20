@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2028,7 +2028,7 @@ MonoBehaviour:
   creepyMaterial: {fileID: 2100000, guid: 2a5d5f77d5c7fd643bc888f77f8fa14e, type: 2}
   renderer: {fileID: 0}
   stareThreshold: 3
-  meltSpeed: 0.45
+  enableGlitch: 1
 --- !u!1001 &265995848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5865,6 +5865,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775197154}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &776802295
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8994856122430219196, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3300849747920824141, guid: ce25a7ca90fdf52469577859c2c5bf47, type: 3}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 96.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -141.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_Name
+      value: salle3v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643538067919560166, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fcb76b288e021a548be914cecd4626db, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5bc201afa5b02b44b11434792ec5053, type: 3}
 --- !u!1 &777095540
 GameObject:
   m_ObjectHideFlags: 0
@@ -6946,7 +7023,7 @@ MonoBehaviour:
   creepyMaterial: {fileID: 2100000, guid: 3c5623cec6058f54bbf0cdac43f1fbe7, type: 2}
   renderer: {fileID: 0}
   stareThreshold: 3
-  meltSpeed: 0.45
+  enableGlitch: 1
 --- !u!1001 &894690960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10719,7 +10796,7 @@ MonoBehaviour:
   creepyMaterial: {fileID: 2100000, guid: 82b51dc7a6e51cd4e9a256ac8a9e541b, type: 2}
   renderer: {fileID: 0}
   stareThreshold: 3
-  meltSpeed: 0.45
+  enableGlitch: 1
 --- !u!1001 &1386705732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12613,7 +12690,7 @@ MonoBehaviour:
   creepyMaterial: {fileID: 2100000, guid: 379dfeb10516424459671e0ad19cdd8c, type: 2}
   renderer: {fileID: 0}
   stareThreshold: 3
-  meltSpeed: 0.45
+  enableGlitch: 1
 --- !u!1 &1662455051 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3747444286459136214, guid: 5f936e75b55cb7e4aa66efea37a55df5, type: 3}
@@ -12944,7 +13021,7 @@ MonoBehaviour:
   creepyMaterial: {fileID: 2100000, guid: 4ed3d9e3041a78b41b88b349b0d1a3a7, type: 2}
   renderer: {fileID: 0}
   stareThreshold: 3
-  meltSpeed: 0.45
+  enableGlitch: 1
 --- !u!4 &1680099972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2774220344278030320, guid: 479f849918f70904aa75293e022acfd9, type: 3}
@@ -15238,7 +15315,7 @@ MonoBehaviour:
   creepyMaterial: {fileID: 2100000, guid: 6fd06d2c8dcab79429901b18ecdb1a16, type: 2}
   renderer: {fileID: 0}
   stareThreshold: 3
-  meltSpeed: 0.45
+  enableGlitch: 1
 --- !u!4 &1893210048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9014170785475729501, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
@@ -16167,7 +16244,7 @@ MonoBehaviour:
   creepyMaterial: {fileID: 2100000, guid: dc3de555f4e19604195b39c7e74e9d65, type: 2}
   renderer: {fileID: 0}
   stareThreshold: 3
-  meltSpeed: 0.45
+  enableGlitch: 1
 --- !u!1 &1970631435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3412649390972202448, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
@@ -17668,3 +17745,4 @@ SceneRoots:
   - {fileID: 1069305886}
   - {fileID: 1773208622}
   - {fileID: 2136710456}
+  - {fileID: 776802295}
