@@ -5,7 +5,10 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
+    [Header("Music")]
     public AudioSource musicSource;
+
+    [Header("Mixer Snapshots")]
     public AudioMixerSnapshot normalSnapshot;
     public AudioMixerSnapshot creepySnapshot;
 
@@ -16,16 +19,20 @@ public class AudioManager : MonoBehaviour
 
     public void StartMusic()
     {
-        if (musicSource != null) musicSource.Play();
+        if (musicSource != null && !musicSource.isPlaying)
+        {
+            musicSource.Play();
+            Debug.Log("🎵 Music Started");
+        }
     }
 
-    public void StartCreepyDistortion()
+    public void UpdateDistortion(float meltAmount)
     {
-        creepySnapshot?.TransitionTo(1.2f);
-    }
+        if (normalSnapshot == null || creepySnapshot == null) return;
 
-    public void ReturnNormalMusic()
-    {
-        normalSnapshot?.TransitionTo(1.5f);
+        if (meltAmount > 0.15f)
+            creepySnapshot.TransitionTo(0.8f);
+        else
+            normalSnapshot.TransitionTo(1.2f);
     }
 }
