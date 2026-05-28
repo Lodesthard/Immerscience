@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\gold-ring-witn-ruby\textures\Ruby_metallic.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\gold-ring-witn-ruby\textures\Ruby_roughness.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\laptop\textures\LaptopFrameEmi.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\laptop\textures\LaptopFrameTexture.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\laptop\textures\LaptopScreenEmiGloss.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\laptop\textures\LaptopScreenTexture.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\low-poly-kids-tricycle\source\Tricycle\Textures\Tricycle_albedo.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\low-poly-kids-tricycle\source\Tricycle\Textures\Tricycle_AO.jpg

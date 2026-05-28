@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Hands\Hand_Grab.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Hands\Hand_Open.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Hands\Hand_Pinch.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Hands\Hand_Poke.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Hands\Hand_Thumb.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\HeadDevice\HMD.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\HeadDevice\HMDOverlay.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\HeadDevice\HMD_d.png

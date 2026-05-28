@@ -39,7 +39,8 @@ public class StareDetector : MonoBehaviour
         if (lastStaredPainting != null)
             lastStaredPainting.OnLookAway();
 
-        Transform xrRig = transform.root;
+        var rig = XRTeleportUtil.FindRig(transform);
+        Transform xrRig = rig ? rig.transform : transform.root;
         Vector3 currentPos = xrRig.position;
 
         // Big teleport, biased backwards/sideways

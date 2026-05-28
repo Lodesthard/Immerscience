@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls (1)\textures\PoolTable_MTL_Roughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\ring-twist-halo\textures\pillow_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\roses_in_vase\textures\Material_0_baseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\skateboard-sketchfab-texturing-challenge\textures\Skate_FBX_01_MatSkate_BaseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\skateboard-sketchfab-texturing-challenge\textures\Skate_FBX_01_MatSkate_Metallic.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\skateboard-sketchfab-texturing-challenge\textures\Skate_FBX_01_MatSkate_Normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\skateboard-sketchfab-texturing-challenge\textures\Skate_FBX_01_MatSkate_Roughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\steam_controller_2025\textures\Ink_ABXY_texture_metallicRoughness.png

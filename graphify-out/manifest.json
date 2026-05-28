@@ -1,0 +1,97 @@
+{
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\AudioManager.cs": {
+    "mtime": 1779230484.7637694,
+    "ast_hash": "b9ceb0fa6013c8bdaa57039ec90e7e90",
+    "semantic_hash": "b9ceb0fa6013c8bdaa57039ec90e7e90"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\CreepyZoneManager.cs": {
+    "mtime": 1779230484.7652721,
+    "ast_hash": "e82ed4a94afeb331ad2515af744ca73a",
+    "semantic_hash": "e82ed4a94afeb331ad2515af744ca73a"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\DebugTrigger.cs": {
+    "mtime": 1779230484.7652721,
+    "ast_hash": "c7ce4f4158d39d5882478e9e6a09e340",
+    "semantic_hash": "c7ce4f4158d39d5882478e9e6a09e340"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\ElevatorWallFit.cs": {
+    "mtime": 1779351846.4289556,
+    "ast_hash": "a45417485e19af006f8234fd74bc7f8e",
+    "semantic_hash": "a45417485e19af006f8234fd74bc7f8e"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\Etage2MusicTrigger.cs": {
+    "mtime": 1779230484.7662766,
+    "ast_hash": "fe2b66d0c49120fe79a554d34c194716",
+    "semantic_hash": "fe2b66d0c49120fe79a554d34c194716"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\FootstepManager.cs": {
+    "mtime": 1770808943.6641963,
+    "ast_hash": "92d60d947f509f1c35168dd8034e059e",
+    "semantic_hash": "92d60d947f509f1c35168dd8034e059e"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\GuitarMelody.cs": {
+    "mtime": 1779230312.4011905,
+    "ast_hash": "44e03b96d56ce7a20c0236679510eb40",
+    "semantic_hash": "44e03b96d56ce7a20c0236679510eb40"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\HoverFeedback.cs": {
+    "mtime": 1770346105.451391,
+    "ast_hash": "6e9607a8e9f6305dcaf2d25a914bff33",
+    "semantic_hash": "6e9607a8e9f6305dcaf2d25a914bff33"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\LaserToggle.cs": {
+    "mtime": 1779230312.4021904,
+    "ast_hash": "3d735adbc5b8882ecd6a664e45116570",
+    "semantic_hash": "3d735adbc5b8882ecd6a664e45116570"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\MagnetReturn.cs": {
+    "mtime": 1770346105.4518914,
+    "ast_hash": "048b27adb0289348320caea223b574d9",
+    "semantic_hash": "048b27adb0289348320caea223b574d9"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\MenuOpener.cs": {
+    "mtime": 1779230312.4021904,
+    "ast_hash": "9c70660be18b74380f1b17832ba10029",
+    "semantic_hash": "9c70660be18b74380f1b17832ba10029"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\PaintingStareEffect.cs": {
+    "mtime": 1779230484.7662766,
+    "ast_hash": "6e9b139b50719ae1d570122ad70f85ce",
+    "semantic_hash": "6e9b139b50719ae1d570122ad70f85ce"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\PorteAutomatique.cs": {
+    "mtime": 1777540643.7071526,
+    "ast_hash": "a7d1a6972f7d075c2eb2b07b069a0c07",
+    "semantic_hash": "a7d1a6972f7d075c2eb2b07b069a0c07"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\SalleMurFlipExterieur.cs": {
+    "mtime": 1779351721.8467872,
+    "ast_hash": "26bb6ad488a03e44b2df4a551901b3f1",
+    "semantic_hash": "26bb6ad488a03e44b2df4a551901b3f1"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\SliderStep.cs": {
+    "mtime": 1770809110.481306,
+    "ast_hash": "d29ed3b9c244640c157370c868d9a00b",
+    "semantic_hash": "d29ed3b9c244640c157370c868d9a00b"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\StareDetector.cs": {
+    "mtime": 1779230484.7662766,
+    "ast_hash": "de82c1b9f70ea2af3b9cfd36b0b6252f",
+    "semantic_hash": "de82c1b9f70ea2af3b9cfd36b0b6252f"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\TwoHandPlayPose.cs": {
+    "mtime": 1779230323.74307,
+    "ast_hash": "9f0804fcb3abbb05470d06c275b55746",
+    "semantic_hash": "9f0804fcb3abbb05470d06c275b55746"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\Scripts\\VRMenuSettings.cs": {
+    "mtime": 1779230312.4021904,
+    "ast_hash": "d61b0523a35b7346634cb0fa8f3f942d",
+    "semantic_hash": "d61b0523a35b7346634cb0fa8f3f942d"
+  },
+  "C:\\Users\\bidbi\\Documents\\Unity\\Immerscience\\Assets\\joel\\AscenseurAutomatique.cs": {
+    "mtime": 1779358831.06444,
+    "ast_hash": "38c036c917506241bb291b54e4a2ebe5",
+    "semantic_hash": "38c036c917506241bb291b54e4a2ebe5"
+  }
+}

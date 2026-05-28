@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\steam_controller_2025\textures\Ink_ABXY_texture_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\steam_controller_2025\textures\Plastic_Track-pad_texture_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\steam_controller_2025\textures\Rubber_L3R3_texture_metallicRoughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\table\source\table\table\textures\DefaultMaterial_Base_Color.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\table\source\table\table\textures\DefaultMaterial_Metallic.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\table\source\table\table\textures\DefaultMaterial_Mixed_AO.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\table\source\table\table\textures\DefaultMaterial_Roughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\table\source\table\table\textures\table_lp_DefaultMaterial_Normal.png

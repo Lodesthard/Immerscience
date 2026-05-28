@@ -1,0 +1,18 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lamborghini_countach_muse_version\license.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\license.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\museum_showcase_-_die_vitrine\license.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\new_balance_kids\license.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\octa_asa_6\license.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\roses_in_vase\license.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\steam_controller_2025\license.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\the_showcase\license.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\toy_xylophone\license.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\velocipede_artisanal_dimitation_michaux\license.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\vitrine\license.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\SpaceZeta_Spotlight\Info.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\ProjectSettings\ProjectVersion.txt
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\TextMesh Pro\Documentation\TextMesh Pro User Guide 2016.pdf

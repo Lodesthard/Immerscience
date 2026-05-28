@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\Starter Assets\DemoSceneAssets\Sprites\Asset.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\Starter Assets\DemoSceneAssets\Sprites\Checkmark.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\Starter Assets\DemoSceneAssets\Sprites\Circle_60x60_Horizontal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\Starter Assets\DemoSceneAssets\Sprites\Forward.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\Starter Assets\DemoSceneAssets\Sprites\Round Radius 4 Outline.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\Starter Assets\DemoSceneAssets\Sprites\Round Radius 4.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\ControllerDevice\ControllerLeft.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\ControllerDevice\ControllerOverlayLinesLeft.png

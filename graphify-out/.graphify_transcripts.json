@@ -1,0 +1,5 @@
+﻿  warning: could not transcribe C:\Users\bidbi\Documents\Unity\Immerscience\Assets\audio\universfield-creepy-halloween-164588.mp3: Video transcription requires faster-whisper. Run: pip install 'graphifyy[video]'
+  warning: could not transcribe C:\Users\bidbi\Documents\Unity\Immerscience\Assets\joel\Musique dascenseur dambiance.mp3: Video transcription requires faster-whisper. Run: pip install 'graphifyy[video]'
+  warning: could not transcribe C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\Starter Assets\DemoSceneAssets\Audio\freesound_community-heavy-footsteps-walking-35722.mp3: Video transcription requires faster-whisper. Run: pip install 'graphifyy[video]'
+  warning: could not transcribe C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\Starter Assets\DemoSceneAssets\Audio\unbanishedmule-elevator-chimenotification-ding-recreation-287560.mp3: Video transcription requires faster-whisper. Run: pip install 'graphifyy[video]'
+[]

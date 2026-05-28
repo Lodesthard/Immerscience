@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\gokucharacter3dmodel\textures\gokucharacter3dmodel_basecolor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\gold-ring-witn-ruby\textures\Prongs_albedo.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\gold-ring-witn-ruby\textures\Prongs_metallic.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\gold-ring-witn-ruby\textures\Prongs_roughness.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\gold-ring-witn-ruby\textures\Ring_albedo.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\gold-ring-witn-ruby\textures\Ring_metallic.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\gold-ring-witn-ruby\textures\Ring_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\gold-ring-witn-ruby\textures\Ruby_albedo.jpg

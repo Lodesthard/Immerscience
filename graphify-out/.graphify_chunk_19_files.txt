@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls (1)\textures\PoolCue_MTL_Coat.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls (1)\textures\PoolCue_MTL_Normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls (1)\textures\PoolCue_MTL_Roughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls (1)\textures\PoolTableBall10_MTL_BaseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls (1)\textures\PoolTableBall11_MTL_BaseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls (1)\textures\PoolTableBall12_MTL_BaseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls (1)\textures\PoolTableBall13_MTL_BaseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls (1)\textures\PoolTableBall14_MTL_BaseColor.png

@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\HeadDevice\Movement.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\HeadDevice\MoveRotateTool.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\HeadDevice\XR.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\HeadDevice\xr_hmd.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Mouse\Cursor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Mouse\Mouse.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Mouse\MouseMoveAround.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Mouse\MouseR.png
