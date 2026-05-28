@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\low-poly-kids-tricycle\source\Tricycle\Textures\Tricycle_roughness.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\low-poly-kids-tricycle\textures\Tricycle_albedo.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\low-poly-kids-tricycle\textures\Tricycle_AO.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\low-poly-kids-tricycle\textures\Tricycle_roughness.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\display_element_mat_baseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\display_element_mat_emissive.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\display_element_mat_metallicRoughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\glass_mat_baseColor.png

@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\american_football_helmet\textures\Helmet_Base_baseColor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\american_football_helmet\textures\Helmet_Base_metallicRoughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\american_football_helmet\textures\Helmet_Base_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\bouquet_roses_blanches\textures\tex_u1_v1_baseColor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\christopher_columbus_monument_plinth\textures\tex_u1_v1_baseColor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\fancy_picture_frame_01_4k.fbx\textures\fancy_picture_frame_01_canvas_diff_4k.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\fancy_picture_frame_01_4k.fbx\textures\fancy_picture_frame_01_canvas_nor_gl_4k.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\fancy_picture_frame_01_4k.fbx\textures\fancy_picture_frame_01_canvas_rough_4k.png

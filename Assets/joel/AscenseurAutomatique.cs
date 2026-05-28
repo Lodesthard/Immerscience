@@ -21,6 +21,9 @@ public class AscenseurAutomatique : MonoBehaviour
     public Vector3 translationGauche = new Vector3(0, 0, -1.5f);
     public Vector3 translationDroite = new Vector3(0, 0, 1.5f);
 
+    [Tooltip("Ajoute 180° au yaw du rig après téléportation (ascenseurs face à face).")]
+    public bool inverserOrientation = true;
+
     private Vector3 posInitialeGauche;
     private Vector3 posInitialeDroite;
     private bool voyageEnCours = false;
@@ -91,19 +94,11 @@ public class AscenseurAutomatique : MonoBehaviour
         if (pointArrivee != null && joueur != null)
         {
             // On cherche l'objet XR Origin (le parent racine du joueur)
-            var xrOrigin = joueur.GetComponentInParent<Unity.XR.CoreUtils.XROrigin>();
+            var xrOrigin = XRTeleportUtil.FindRig(joueur);
 
             if (xrOrigin != null)
             {
-                // 1. Déplacer le Rig complet
-                xrOrigin.transform.position = pointArrivee.position;
-                xrOrigin.transform.rotation = pointArrivee.rotation;
-
-                // 2. Correction de l'Offset de la caméra (si le joueur a bougé dans sa zone réelle)
-                Vector3 offsetTete = xrOrigin.Camera.transform.position - xrOrigin.transform.position;
-                offsetTete.y = 0;
-                xrOrigin.transform.position -= offsetTete;//xrOrigin.transform.position -= offsetTete;
-
+                XRTeleportUtil.TeleportToMarker(xrOrigin, pointArrivee, inverserOrientation, keepHeight: true);
                 Debug.Log("Téléportation XR Origin réussie !");
             }
             else

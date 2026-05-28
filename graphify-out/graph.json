@@ -1,0 +1,4505 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "vr_grab_interactable_scripts",
+        "label": "VR grab-interactable scripts (XRGrabInteractable select events)",
+        "nodes": [
+          "guitarmelody_GuitarMelody",
+          "twohandplaypose_TwoHandPlayPose",
+          "magnetreturn_MagnetReturn",
+          "hoverfeedback_HoverFeedback"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "Assets/Scripts/GuitarMelody.cs"
+      },
+      {
+        "id": "proximity_trigger_scripts",
+        "label": "Player proximity / trigger detection scripts",
+        "nodes": [
+          "porteautomatique_PorteAutomatique",
+          "ascenseurautomatique_AscenseurAutomatique",
+          "creepyzonemanager_CreepyZoneManager",
+          "etage2musictrigger_Etage2MusicTrigger",
+          "debugtrigger_DebugTrigger"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "Assets/Scripts/PorteAutomatique.cs"
+      },
+      {
+        "id": "elevator_travel_flow",
+        "label": "Elevator close-wait-teleport-open flow",
+        "nodes": [
+          "ascenseurautomatique_AscenseurAutomatique",
+          "ascenseurautomatique_SequenceVoyage",
+          "ascenseurautomatique_symmetric_door_rationale"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "Assets/joel/AscenseurAutomatique.cs"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "AudioManager.cs",
+      "file_type": "code",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L1",
+      "id": "scripts_audiomanager_cs",
+      "community": 0,
+      "norm_label": "audiomanager.cs"
+    },
+    {
+      "label": "AudioManager",
+      "file_type": "code",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L4",
+      "id": "scripts_audiomanager_audiomanager",
+      "community": 0,
+      "norm_label": "audiomanager"
+    },
+    {
+      "label": "MonoBehaviour",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "monobehaviour",
+      "community": 0,
+      "norm_label": "monobehaviour"
+    },
+    {
+      "label": "AudioSource",
+      "file_type": "code",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L8",
+      "id": "scripts_audiomanager_cs_audiosource",
+      "community": 0,
+      "norm_label": "audiosource"
+    },
+    {
+      "label": "AudioMixerSnapshot",
+      "file_type": "code",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L9",
+      "id": "audiomixersnapshot",
+      "community": 0,
+      "norm_label": "audiomixersnapshot"
+    },
+    {
+      "label": ".Awake()",
+      "file_type": "code",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L12",
+      "id": "scripts_audiomanager_audiomanager_awake",
+      "community": 0,
+      "norm_label": ".awake()"
+    },
+    {
+      "label": ".StartMusic()",
+      "file_type": "code",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L17",
+      "id": "scripts_audiomanager_audiomanager_startmusic",
+      "community": 0,
+      "norm_label": ".startmusic()"
+    },
+    {
+      "label": ".StartCreepyDistortion()",
+      "file_type": "code",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L22",
+      "id": "scripts_audiomanager_audiomanager_startcreepydistortion",
+      "community": 0,
+      "norm_label": ".startcreepydistortion()"
+    },
+    {
+      "label": ".ReturnNormalMusic()",
+      "file_type": "code",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L27",
+      "id": "scripts_audiomanager_audiomanager_returnnormalmusic",
+      "community": 0,
+      "norm_label": ".returnnormalmusic()"
+    },
+    {
+      "label": "CreepyZoneManager.cs",
+      "file_type": "code",
+      "source_file": "Scripts/CreepyZoneManager.cs",
+      "source_location": "L1",
+      "id": "scripts_creepyzonemanager_cs",
+      "community": 0,
+      "norm_label": "creepyzonemanager.cs"
+    },
+    {
+      "label": "CreepyZoneManager",
+      "file_type": "code",
+      "source_file": "Scripts/CreepyZoneManager.cs",
+      "source_location": "L3",
+      "id": "scripts_creepyzonemanager_creepyzonemanager",
+      "community": 0,
+      "norm_label": "creepyzonemanager"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "Scripts/CreepyZoneManager.cs",
+      "source_location": "L6",
+      "id": "scripts_creepyzonemanager_cs_bool",
+      "community": 0,
+      "norm_label": "bool"
+    },
+    {
+      "label": ".Awake()",
+      "file_type": "code",
+      "source_file": "Scripts/CreepyZoneManager.cs",
+      "source_location": "L8",
+      "id": "scripts_creepyzonemanager_creepyzonemanager_awake",
+      "community": 0,
+      "norm_label": ".awake()"
+    },
+    {
+      "label": ".Update()",
+      "file_type": "code",
+      "source_file": "Scripts/CreepyZoneManager.cs",
+      "source_location": "L13",
+      "id": "scripts_creepyzonemanager_creepyzonemanager_update",
+      "community": 0,
+      "norm_label": ".update()"
+    },
+    {
+      "label": "DebugTrigger.cs",
+      "file_type": "code",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L1",
+      "id": "scripts_debugtrigger_cs",
+      "community": 16,
+      "norm_label": "debugtrigger.cs"
+    },
+    {
+      "label": "DebugTrigger",
+      "file_type": "code",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L3",
+      "id": "scripts_debugtrigger_debugtrigger",
+      "community": 16,
+      "norm_label": "debugtrigger"
+    },
+    {
+      "label": ".OnTriggerEnter()",
+      "file_type": "code",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L5",
+      "id": "scripts_debugtrigger_debugtrigger_ontriggerenter",
+      "community": 16,
+      "norm_label": ".ontriggerenter()"
+    },
+    {
+      "label": "Collider",
+      "file_type": "code",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L5",
+      "id": "scripts_debugtrigger_cs_collider",
+      "community": 16,
+      "norm_label": "collider"
+    },
+    {
+      "label": ".OnTriggerStay()",
+      "file_type": "code",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L10",
+      "id": "scripts_debugtrigger_debugtrigger_ontriggerstay",
+      "community": 16,
+      "norm_label": ".ontriggerstay()"
+    },
+    {
+      "label": ".OnTriggerExit()",
+      "file_type": "code",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L16",
+      "id": "scripts_debugtrigger_debugtrigger_ontriggerexit",
+      "community": 16,
+      "norm_label": ".ontriggerexit()"
+    },
+    {
+      "label": "ElevatorWallFit.cs",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L1",
+      "id": "scripts_elevatorwallfit_cs",
+      "community": 4,
+      "norm_label": "elevatorwallfit.cs"
+    },
+    {
+      "label": "ElevatorWallFit",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L6",
+      "id": "scripts_elevatorwallfit_elevatorwallfit",
+      "community": 4,
+      "norm_label": "elevatorwallfit"
+    },
+    {
+      "label": "FitAxis",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L11",
+      "id": "fitaxis",
+      "community": 4,
+      "norm_label": "fitaxis"
+    },
+    {
+      "label": "LayerMask",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L13",
+      "id": "layermask",
+      "community": 4,
+      "norm_label": "layermask"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L15",
+      "id": "scripts_elevatorwallfit_cs_float",
+      "community": 4,
+      "norm_label": "float"
+    },
+    {
+      "label": "Transform",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L19",
+      "id": "scripts_elevatorwallfit_cs_transform",
+      "community": 4,
+      "norm_label": "transform"
+    },
+    {
+      "label": ".GetDir()",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L22",
+      "id": "scripts_elevatorwallfit_elevatorwallfit_getdir",
+      "community": 4,
+      "norm_label": ".getdir()"
+    },
+    {
+      "label": "Vector3",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L22",
+      "id": "scripts_elevatorwallfit_cs_vector3",
+      "community": 4,
+      "norm_label": "vector3"
+    },
+    {
+      "label": ".FitToWall()",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L37",
+      "id": "scripts_elevatorwallfit_elevatorwallfit_fittowall",
+      "community": 4,
+      "norm_label": ".fittowall()"
+    },
+    {
+      "label": "ContextMenu",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L37",
+      "id": "scripts_elevatorwallfit_cs_contextmenu",
+      "community": 4,
+      "norm_label": "contextmenu"
+    },
+    {
+      "label": "ElevatorWallFitEditor",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L74",
+      "id": "scripts_elevatorwallfit_elevatorwallfiteditor",
+      "community": 4,
+      "norm_label": "elevatorwallfiteditor"
+    },
+    {
+      "label": "Editor",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "editor",
+      "community": 4,
+      "norm_label": "editor"
+    },
+    {
+      "label": ".OnInspectorGUI()",
+      "file_type": "code",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L77",
+      "id": "scripts_elevatorwallfit_elevatorwallfiteditor_oninspectorgui",
+      "community": 4,
+      "norm_label": ".oninspectorgui()"
+    },
+    {
+      "label": "Etage2MusicTrigger.cs",
+      "file_type": "code",
+      "source_file": "Scripts/Etage2MusicTrigger.cs",
+      "source_location": "L1",
+      "id": "scripts_etage2musictrigger_cs",
+      "community": 0,
+      "norm_label": "etage2musictrigger.cs"
+    },
+    {
+      "label": "Etage2MusicTrigger",
+      "file_type": "code",
+      "source_file": "Scripts/Etage2MusicTrigger.cs",
+      "source_location": "L3",
+      "id": "scripts_etage2musictrigger_etage2musictrigger",
+      "community": 0,
+      "norm_label": "etage2musictrigger"
+    },
+    {
+      "label": ".OnTriggerEnter()",
+      "file_type": "code",
+      "source_file": "Scripts/Etage2MusicTrigger.cs",
+      "source_location": "L5",
+      "id": "scripts_etage2musictrigger_etage2musictrigger_ontriggerenter",
+      "community": 0,
+      "norm_label": ".ontriggerenter()"
+    },
+    {
+      "label": "Collider",
+      "file_type": "code",
+      "source_file": "Scripts/Etage2MusicTrigger.cs",
+      "source_location": "L5",
+      "id": "scripts_etage2musictrigger_cs_collider",
+      "community": 0,
+      "norm_label": "collider"
+    },
+    {
+      "label": "FootstepManager.cs",
+      "file_type": "code",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L1",
+      "id": "scripts_footstepmanager_cs",
+      "community": 11,
+      "norm_label": "footstepmanager.cs"
+    },
+    {
+      "label": "FootstepManager",
+      "file_type": "code",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L3",
+      "id": "scripts_footstepmanager_footstepmanager",
+      "community": 11,
+      "norm_label": "footstepmanager"
+    },
+    {
+      "label": "AudioSource",
+      "file_type": "code",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L5",
+      "id": "scripts_footstepmanager_cs_audiosource",
+      "community": 11,
+      "norm_label": "audiosource"
+    },
+    {
+      "label": "Transform",
+      "file_type": "code",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L6",
+      "id": "scripts_footstepmanager_cs_transform",
+      "community": 11,
+      "norm_label": "transform"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L7",
+      "id": "scripts_footstepmanager_cs_float",
+      "community": 11,
+      "norm_label": "float"
+    },
+    {
+      "label": "Vector3",
+      "file_type": "code",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L8",
+      "id": "scripts_footstepmanager_cs_vector3",
+      "community": 11,
+      "norm_label": "vector3"
+    },
+    {
+      "label": ".Start()",
+      "file_type": "code",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L10",
+      "id": "scripts_footstepmanager_footstepmanager_start",
+      "community": 11,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".Update()",
+      "file_type": "code",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L16",
+      "id": "scripts_footstepmanager_footstepmanager_update",
+      "community": 11,
+      "norm_label": ".update()"
+    },
+    {
+      "label": "GuitarMelody.cs",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L1",
+      "id": "scripts_guitarmelody_cs",
+      "community": 2,
+      "norm_label": "guitarmelody.cs"
+    },
+    {
+      "label": "GuitarMelody",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L4",
+      "id": "scripts_guitarmelody_guitarmelody",
+      "community": 2,
+      "norm_label": "guitarmelody"
+    },
+    {
+      "label": "AudioSource",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L7",
+      "id": "scripts_guitarmelody_cs_audiosource",
+      "community": 2,
+      "norm_label": "audiosource"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L10",
+      "id": "scripts_guitarmelody_cs_bool",
+      "community": 2,
+      "norm_label": "bool"
+    },
+    {
+      "label": "XRGrabInteractable",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L13",
+      "id": "scripts_guitarmelody_cs_xrgrabinteractable",
+      "community": 2,
+      "norm_label": "xrgrabinteractable"
+    },
+    {
+      "label": "XRBaseInteractor",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L14",
+      "id": "xrbaseinteractor",
+      "community": 2,
+      "norm_label": "xrbaseinteractor"
+    },
+    {
+      "label": ".Awake()",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L17",
+      "id": "scripts_guitarmelody_guitarmelody_awake",
+      "community": 2,
+      "norm_label": ".awake()"
+    },
+    {
+      "label": ".OnDestroy()",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L29",
+      "id": "scripts_guitarmelody_guitarmelody_ondestroy",
+      "community": 2,
+      "norm_label": ".ondestroy()"
+    },
+    {
+      "label": ".OnFirstHandGrab()",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L35",
+      "id": "scripts_guitarmelody_guitarmelody_onfirsthandgrab",
+      "community": 2,
+      "norm_label": ".onfirsthandgrab()"
+    },
+    {
+      "label": "SelectEnterEventArgs",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L35",
+      "id": "scripts_guitarmelody_cs_selectentereventargs",
+      "community": 2,
+      "norm_label": "selectentereventargs"
+    },
+    {
+      "label": ".OnFirstHandRelease()",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L41",
+      "id": "scripts_guitarmelody_guitarmelody_onfirsthandrelease",
+      "community": 2,
+      "norm_label": ".onfirsthandrelease()"
+    },
+    {
+      "label": "SelectExitEventArgs",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L41",
+      "id": "scripts_guitarmelody_cs_selectexiteventargs",
+      "community": 2,
+      "norm_label": "selectexiteventargs"
+    },
+    {
+      "label": ".SetSecondHand()",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L48",
+      "id": "scripts_guitarmelody_guitarmelody_setsecondhand",
+      "community": 2,
+      "norm_label": ".setsecondhand()"
+    },
+    {
+      "label": ".ClearSecondHand()",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L55",
+      "id": "scripts_guitarmelody_guitarmelody_clearsecondhand",
+      "community": 2,
+      "norm_label": ".clearsecondhand()"
+    },
+    {
+      "label": ".TryStartOrStop()",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L63",
+      "id": "scripts_guitarmelody_guitarmelody_trystartorstop",
+      "community": 2,
+      "norm_label": ".trystartorstop()"
+    },
+    {
+      "label": ".StartMelody()",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L75",
+      "id": "scripts_guitarmelody_guitarmelody_startmelody",
+      "community": 2,
+      "norm_label": ".startmelody()"
+    },
+    {
+      "label": ".StopMelody()",
+      "file_type": "code",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L86",
+      "id": "scripts_guitarmelody_guitarmelody_stopmelody",
+      "community": 2,
+      "norm_label": ".stopmelody()"
+    },
+    {
+      "label": "HoverFeedback.cs",
+      "file_type": "code",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L1",
+      "id": "scripts_hoverfeedback_cs",
+      "community": 6,
+      "norm_label": "hoverfeedback.cs"
+    },
+    {
+      "label": "HoverFeedback",
+      "file_type": "code",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L4",
+      "id": "scripts_hoverfeedback_hoverfeedback",
+      "community": 6,
+      "norm_label": "hoverfeedback"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L6",
+      "id": "scripts_hoverfeedback_cs_float",
+      "community": 6,
+      "norm_label": "float"
+    },
+    {
+      "label": "GameObject",
+      "file_type": "code",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L8",
+      "id": "scripts_hoverfeedback_cs_gameobject",
+      "community": 6,
+      "norm_label": "gameobject"
+    },
+    {
+      "label": "Vector3",
+      "file_type": "code",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L10",
+      "id": "scripts_hoverfeedback_cs_vector3",
+      "community": 6,
+      "norm_label": "vector3"
+    },
+    {
+      "label": "XRBaseInteractable",
+      "file_type": "code",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L11",
+      "id": "xrbaseinteractable",
+      "community": 6,
+      "norm_label": "xrbaseinteractable"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L12",
+      "id": "scripts_hoverfeedback_cs_bool",
+      "community": 6,
+      "norm_label": "bool"
+    },
+    {
+      "label": ".Start()",
+      "file_type": "code",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L14",
+      "id": "scripts_hoverfeedback_hoverfeedback_start",
+      "community": 6,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".Update()",
+      "file_type": "code",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L25",
+      "id": "scripts_hoverfeedback_hoverfeedback_update",
+      "community": 6,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".OnHover()",
+      "file_type": "code",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L31",
+      "id": "scripts_hoverfeedback_hoverfeedback_onhover",
+      "community": 6,
+      "norm_label": ".onhover()"
+    },
+    {
+      "label": "LaserToggle.cs",
+      "file_type": "code",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L1",
+      "id": "scripts_lasertoggle_cs",
+      "community": 12,
+      "norm_label": "lasertoggle.cs"
+    },
+    {
+      "label": "LaserToggle",
+      "file_type": "code",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L5",
+      "id": "scripts_lasertoggle_lasertoggle",
+      "community": 12,
+      "norm_label": "lasertoggle"
+    },
+    {
+      "label": "InputActionReference",
+      "file_type": "code",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L7",
+      "id": "scripts_lasertoggle_cs_inputactionreference",
+      "community": 12,
+      "norm_label": "inputactionreference"
+    },
+    {
+      "label": "XRRayInteractor",
+      "file_type": "code",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L8",
+      "id": "xrrayinteractor",
+      "community": 12,
+      "norm_label": "xrrayinteractor"
+    },
+    {
+      "label": ".OnEnable()",
+      "file_type": "code",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L11",
+      "id": "scripts_lasertoggle_lasertoggle_onenable",
+      "community": 12,
+      "norm_label": ".onenable()"
+    },
+    {
+      "label": ".OnDisable()",
+      "file_type": "code",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L16",
+      "id": "scripts_lasertoggle_lasertoggle_ondisable",
+      "community": 12,
+      "norm_label": ".ondisable()"
+    },
+    {
+      "label": ".OnToggleLasers()",
+      "file_type": "code",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L21",
+      "id": "scripts_lasertoggle_lasertoggle_ontogglelasers",
+      "community": 12,
+      "norm_label": ".ontogglelasers()"
+    },
+    {
+      "label": "CallbackContext",
+      "file_type": "code",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L21",
+      "id": "scripts_lasertoggle_cs_callbackcontext",
+      "community": 12,
+      "norm_label": "callbackcontext"
+    },
+    {
+      "label": "MagnetReturn.cs",
+      "file_type": "code",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L1",
+      "id": "scripts_magnetreturn_cs",
+      "community": 7,
+      "norm_label": "magnetreturn.cs"
+    },
+    {
+      "label": "MagnetReturn",
+      "file_type": "code",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L4",
+      "id": "scripts_magnetreturn_magnetreturn",
+      "community": 7,
+      "norm_label": "magnetreturn"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L6",
+      "id": "scripts_magnetreturn_cs_float",
+      "community": 7,
+      "norm_label": "float"
+    },
+    {
+      "label": "Vector3",
+      "file_type": "code",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L9",
+      "id": "scripts_magnetreturn_cs_vector3",
+      "community": 7,
+      "norm_label": "vector3"
+    },
+    {
+      "label": "Quaternion",
+      "file_type": "code",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L10",
+      "id": "scripts_magnetreturn_cs_quaternion",
+      "community": 7,
+      "norm_label": "quaternion"
+    },
+    {
+      "label": "XRGrabInteractable",
+      "file_type": "code",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L11",
+      "id": "scripts_magnetreturn_cs_xrgrabinteractable",
+      "community": 7,
+      "norm_label": "xrgrabinteractable"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L12",
+      "id": "scripts_magnetreturn_cs_bool",
+      "community": 7,
+      "norm_label": "bool"
+    },
+    {
+      "label": ".Start()",
+      "file_type": "code",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L14",
+      "id": "scripts_magnetreturn_magnetreturn_start",
+      "community": 7,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".TryReturn()",
+      "file_type": "code",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L23",
+      "id": "scripts_magnetreturn_magnetreturn_tryreturn",
+      "community": 7,
+      "norm_label": ".tryreturn()"
+    },
+    {
+      "label": ".Update()",
+      "file_type": "code",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L32",
+      "id": "scripts_magnetreturn_magnetreturn_update",
+      "community": 7,
+      "norm_label": ".update()"
+    },
+    {
+      "label": "MenuOpener.cs",
+      "file_type": "code",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L1",
+      "id": "scripts_menuopener_cs",
+      "community": 9,
+      "norm_label": "menuopener.cs"
+    },
+    {
+      "label": "MenuOpener",
+      "file_type": "code",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L4",
+      "id": "scripts_menuopener_menuopener",
+      "community": 9,
+      "norm_label": "menuopener"
+    },
+    {
+      "label": "InputActionReference",
+      "file_type": "code",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L6",
+      "id": "scripts_menuopener_cs_inputactionreference",
+      "community": 9,
+      "norm_label": "inputactionreference"
+    },
+    {
+      "label": "GameObject",
+      "file_type": "code",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L7",
+      "id": "scripts_menuopener_cs_gameobject",
+      "community": 9,
+      "norm_label": "gameobject"
+    },
+    {
+      "label": "Transform",
+      "file_type": "code",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L8",
+      "id": "scripts_menuopener_cs_transform",
+      "community": 9,
+      "norm_label": "transform"
+    },
+    {
+      "label": ".OnEnable()",
+      "file_type": "code",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L10",
+      "id": "scripts_menuopener_menuopener_onenable",
+      "community": 9,
+      "norm_label": ".onenable()"
+    },
+    {
+      "label": ".OnDisable()",
+      "file_type": "code",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L15",
+      "id": "scripts_menuopener_menuopener_ondisable",
+      "community": 9,
+      "norm_label": ".ondisable()"
+    },
+    {
+      "label": ".OnOpenMenu()",
+      "file_type": "code",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L20",
+      "id": "scripts_menuopener_menuopener_onopenmenu",
+      "community": 9,
+      "norm_label": ".onopenmenu()"
+    },
+    {
+      "label": "CallbackContext",
+      "file_type": "code",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L20",
+      "id": "scripts_menuopener_cs_callbackcontext",
+      "community": 9,
+      "norm_label": "callbackcontext"
+    },
+    {
+      "label": "PaintingStareEffect.cs",
+      "file_type": "code",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L1",
+      "id": "scripts_paintingstareeffect_cs",
+      "community": 10,
+      "norm_label": "paintingstareeffect.cs"
+    },
+    {
+      "label": "PaintingStareEffect",
+      "file_type": "code",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L3",
+      "id": "scripts_paintingstareeffect_paintingstareeffect",
+      "community": 10,
+      "norm_label": "paintingstareeffect"
+    },
+    {
+      "label": "Material",
+      "file_type": "code",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L5",
+      "id": "material",
+      "community": 10,
+      "norm_label": "material"
+    },
+    {
+      "label": "Renderer",
+      "file_type": "code",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L7",
+      "id": "renderer",
+      "community": 10,
+      "norm_label": "renderer"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L9",
+      "id": "scripts_paintingstareeffect_cs_float",
+      "community": 10,
+      "norm_label": "float"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L10",
+      "id": "scripts_paintingstareeffect_cs_bool",
+      "community": 10,
+      "norm_label": "bool"
+    },
+    {
+      "label": ".Start()",
+      "file_type": "code",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L15",
+      "id": "scripts_paintingstareeffect_paintingstareeffect_start",
+      "community": 10,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".OnStare()",
+      "file_type": "code",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L24",
+      "id": "scripts_paintingstareeffect_paintingstareeffect_onstare",
+      "community": 10,
+      "norm_label": ".onstare()"
+    },
+    {
+      "label": ".OnLookAway()",
+      "file_type": "code",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L38",
+      "id": "scripts_paintingstareeffect_paintingstareeffect_onlookaway",
+      "community": 10,
+      "norm_label": ".onlookaway()"
+    },
+    {
+      "label": "PorteAutomatique.cs",
+      "file_type": "code",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L1",
+      "id": "scripts_porteautomatique_cs",
+      "community": 15,
+      "norm_label": "porteautomatique.cs"
+    },
+    {
+      "label": "PorteAutomatique",
+      "file_type": "code",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L3",
+      "id": "scripts_porteautomatique_porteautomatique",
+      "community": 15,
+      "norm_label": "porteautomatique"
+    },
+    {
+      "label": "Transform",
+      "file_type": "code",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L5",
+      "id": "scripts_porteautomatique_cs_transform",
+      "community": 15,
+      "norm_label": "transform"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L8",
+      "id": "scripts_porteautomatique_cs_float",
+      "community": 15,
+      "norm_label": "float"
+    },
+    {
+      "label": "Vector3",
+      "file_type": "code",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L10",
+      "id": "scripts_porteautomatique_cs_vector3",
+      "community": 15,
+      "norm_label": "vector3"
+    },
+    {
+      "label": ".Start()",
+      "file_type": "code",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L17",
+      "id": "scripts_porteautomatique_porteautomatique_start",
+      "community": 15,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".Update()",
+      "file_type": "code",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L23",
+      "id": "scripts_porteautomatique_porteautomatique_update",
+      "community": 15,
+      "norm_label": ".update()"
+    },
+    {
+      "label": "SalleMurFlipExterieur.cs",
+      "file_type": "code",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L1",
+      "id": "scripts_sallemurflipexterieur_cs",
+      "community": 17,
+      "norm_label": "sallemurflipexterieur.cs"
+    },
+    {
+      "label": "SalleMurFlipExterieur",
+      "file_type": "code",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L3",
+      "id": "scripts_sallemurflipexterieur_sallemurflipexterieur",
+      "community": 17,
+      "norm_label": "sallemurflipexterieur"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L6",
+      "id": "scripts_sallemurflipexterieur_cs_bool",
+      "community": 17,
+      "norm_label": "bool"
+    },
+    {
+      "label": ".Awake()",
+      "file_type": "code",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L9",
+      "id": "scripts_sallemurflipexterieur_sallemurflipexterieur_awake",
+      "community": 17,
+      "norm_label": ".awake()"
+    },
+    {
+      "label": ".Flip()",
+      "file_type": "code",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L14",
+      "id": "scripts_sallemurflipexterieur_sallemurflipexterieur_flip",
+      "community": 17,
+      "norm_label": ".flip()"
+    },
+    {
+      "label": "ContextMenu",
+      "file_type": "code",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L14",
+      "id": "scripts_sallemurflipexterieur_cs_contextmenu",
+      "community": 17,
+      "norm_label": "contextmenu"
+    },
+    {
+      "label": "SliderStep.cs",
+      "file_type": "code",
+      "source_file": "Scripts/SliderStep.cs",
+      "source_location": "L1",
+      "id": "scripts_sliderstep_cs",
+      "community": 0,
+      "norm_label": "sliderstep.cs"
+    },
+    {
+      "label": "SliderStep",
+      "file_type": "code",
+      "source_file": "Scripts/SliderStep.cs",
+      "source_location": "L4",
+      "id": "scripts_sliderstep_sliderstep",
+      "community": 0,
+      "norm_label": "sliderstep"
+    },
+    {
+      "label": "Slider",
+      "file_type": "code",
+      "source_file": "Scripts/SliderStep.cs",
+      "source_location": "L6",
+      "id": "scripts_sliderstep_cs_slider",
+      "community": 0,
+      "norm_label": "slider"
+    },
+    {
+      "label": ".Start()",
+      "file_type": "code",
+      "source_file": "Scripts/SliderStep.cs",
+      "source_location": "L8",
+      "id": "scripts_sliderstep_sliderstep_start",
+      "community": 0,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".OnSliderChanged()",
+      "file_type": "code",
+      "source_file": "Scripts/SliderStep.cs",
+      "source_location": "L13",
+      "id": "scripts_sliderstep_sliderstep_onsliderchanged",
+      "community": 0,
+      "norm_label": ".onsliderchanged()"
+    },
+    {
+      "label": "StareDetector.cs",
+      "file_type": "code",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L1",
+      "id": "scripts_staredetector_cs",
+      "community": 8,
+      "norm_label": "staredetector.cs"
+    },
+    {
+      "label": "StareDetector",
+      "file_type": "code",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L3",
+      "id": "scripts_staredetector_staredetector",
+      "community": 8,
+      "norm_label": "staredetector"
+    },
+    {
+      "label": "PaintingStareEffect",
+      "file_type": "code",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L5",
+      "id": "paintingstareeffect",
+      "community": 8,
+      "norm_label": "paintingstareeffect"
+    },
+    {
+      "label": ".Update()",
+      "file_type": "code",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L7",
+      "id": "scripts_staredetector_staredetector_update",
+      "community": 8,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".HandleStareDetection()",
+      "file_type": "code",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L12",
+      "id": "scripts_staredetector_staredetector_handlestaredetection",
+      "community": 8,
+      "norm_label": ".handlestaredetection()"
+    },
+    {
+      "label": ".TriggerSuddenTeleport()",
+      "file_type": "code",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L37",
+      "id": "scripts_staredetector_staredetector_triggersuddenteleport",
+      "community": 8,
+      "norm_label": ".triggersuddenteleport()"
+    },
+    {
+      "label": ".DoQuickTeleport()",
+      "file_type": "code",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L58",
+      "id": "scripts_staredetector_staredetector_doquickteleport",
+      "community": 8,
+      "norm_label": ".doquickteleport()"
+    },
+    {
+      "label": "Transform",
+      "file_type": "code",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L58",
+      "id": "scripts_staredetector_cs_transform",
+      "community": 8,
+      "norm_label": "transform"
+    },
+    {
+      "label": "Vector3",
+      "file_type": "code",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L58",
+      "id": "scripts_staredetector_cs_vector3",
+      "community": 8,
+      "norm_label": "vector3"
+    },
+    {
+      "label": "IEnumerator",
+      "file_type": "code",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L58",
+      "id": "scripts_staredetector_cs_ienumerator",
+      "community": 8,
+      "norm_label": "ienumerator"
+    },
+    {
+      "label": "TwoHandPlayPose.cs",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L1",
+      "id": "scripts_twohandplaypose_cs",
+      "community": 1,
+      "norm_label": "twohandplaypose.cs"
+    },
+    {
+      "label": "TwoHandPlayPose",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L4",
+      "id": "scripts_twohandplaypose_twohandplaypose",
+      "community": 1,
+      "norm_label": "twohandplaypose"
+    },
+    {
+      "label": "Transform",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L7",
+      "id": "scripts_twohandplaypose_cs_transform",
+      "community": 1,
+      "norm_label": "transform"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L14",
+      "id": "scripts_twohandplaypose_cs_float",
+      "community": 1,
+      "norm_label": "float"
+    },
+    {
+      "label": "AudioSource",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L18",
+      "id": "scripts_twohandplaypose_cs_audiosource",
+      "community": 1,
+      "norm_label": "audiosource"
+    },
+    {
+      "label": "AudioClip",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L22",
+      "id": "audioclip",
+      "community": 1,
+      "norm_label": "audioclip"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L27",
+      "id": "scripts_twohandplaypose_cs_bool",
+      "community": 1,
+      "norm_label": "bool"
+    },
+    {
+      "label": "XRGrabInteractable",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L30",
+      "id": "scripts_twohandplaypose_cs_xrgrabinteractable",
+      "community": 1,
+      "norm_label": "xrgrabinteractable"
+    },
+    {
+      "label": "Rigidbody",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L31",
+      "id": "rigidbody",
+      "community": 1,
+      "norm_label": "rigidbody"
+    },
+    {
+      "label": "Vector3",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L36",
+      "id": "scripts_twohandplaypose_cs_vector3",
+      "community": 1,
+      "norm_label": "vector3"
+    },
+    {
+      "label": "Quaternion",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L37",
+      "id": "scripts_twohandplaypose_cs_quaternion",
+      "community": 1,
+      "norm_label": "quaternion"
+    },
+    {
+      "label": ".Awake()",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L39",
+      "id": "scripts_twohandplaypose_twohandplaypose_awake",
+      "community": 1,
+      "norm_label": ".awake()"
+    },
+    {
+      "label": ".OnDestroy()",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L57",
+      "id": "scripts_twohandplaypose_twohandplaypose_ondestroy",
+      "community": 1,
+      "norm_label": ".ondestroy()"
+    },
+    {
+      "label": ".OnSelectEntered()",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L66",
+      "id": "scripts_twohandplaypose_twohandplaypose_onselectentered",
+      "community": 1,
+      "norm_label": ".onselectentered()"
+    },
+    {
+      "label": "SelectEnterEventArgs",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L66",
+      "id": "scripts_twohandplaypose_cs_selectentereventargs",
+      "community": 1,
+      "norm_label": "selectentereventargs"
+    },
+    {
+      "label": ".OnSelectExited()",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L81",
+      "id": "scripts_twohandplaypose_twohandplaypose_onselectexited",
+      "community": 1,
+      "norm_label": ".onselectexited()"
+    },
+    {
+      "label": "SelectExitEventArgs",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L81",
+      "id": "scripts_twohandplaypose_cs_selectexiteventargs",
+      "community": 1,
+      "norm_label": "selectexiteventargs"
+    },
+    {
+      "label": ".PlayGrabSound()",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L92",
+      "id": "scripts_twohandplaypose_twohandplaypose_playgrabsound",
+      "community": 1,
+      "norm_label": ".playgrabsound()"
+    },
+    {
+      "label": ".LateUpdate()",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L98",
+      "id": "scripts_twohandplaypose_twohandplaypose_lateupdate",
+      "community": 1,
+      "norm_label": ".lateupdate()"
+    },
+    {
+      "label": ".IsLeftHand()",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L147",
+      "id": "scripts_twohandplaypose_twohandplaypose_islefthand",
+      "community": 1,
+      "norm_label": ".islefthand()"
+    },
+    {
+      "label": "IXRSelectInteractor",
+      "file_type": "code",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L147",
+      "id": "ixrselectinteractor",
+      "community": 1,
+      "norm_label": "ixrselectinteractor"
+    },
+    {
+      "label": "VRMenuSettings.cs",
+      "file_type": "code",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L1",
+      "id": "scripts_vrmenusettings_cs",
+      "community": 13,
+      "norm_label": "vrmenusettings.cs"
+    },
+    {
+      "label": "VRMenuSettings",
+      "file_type": "code",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L5",
+      "id": "scripts_vrmenusettings_vrmenusettings",
+      "community": 13,
+      "norm_label": "vrmenusettings"
+    },
+    {
+      "label": "Transform",
+      "file_type": "code",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L7",
+      "id": "scripts_vrmenusettings_cs_transform",
+      "community": 13,
+      "norm_label": "transform"
+    },
+    {
+      "label": "ContinuousMoveProviderBase",
+      "file_type": "code",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L9",
+      "id": "continuousmoveproviderbase",
+      "community": 13,
+      "norm_label": "continuousmoveproviderbase"
+    },
+    {
+      "label": "Slider",
+      "file_type": "code",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L11",
+      "id": "scripts_vrmenusettings_cs_slider",
+      "community": 13,
+      "norm_label": "slider"
+    },
+    {
+      "label": ".Start()",
+      "file_type": "code",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L15",
+      "id": "scripts_vrmenusettings_vrmenusettings_start",
+      "community": 13,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".OnSizeChanged()",
+      "file_type": "code",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L30",
+      "id": "scripts_vrmenusettings_vrmenusettings_onsizechanged",
+      "community": 13,
+      "norm_label": ".onsizechanged()"
+    },
+    {
+      "label": ".OnSpeedChanged()",
+      "file_type": "code",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L35",
+      "id": "scripts_vrmenusettings_vrmenusettings_onspeedchanged",
+      "community": 13,
+      "norm_label": ".onspeedchanged()"
+    },
+    {
+      "label": "AscenseurAutomatique.cs",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L1",
+      "id": "joel_ascenseurautomatique_cs",
+      "community": 5,
+      "norm_label": "ascenseurautomatique.cs"
+    },
+    {
+      "label": "AscenseurAutomatique",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L4",
+      "id": "joel_ascenseurautomatique_ascenseurautomatique",
+      "community": 5,
+      "norm_label": "ascenseurautomatique"
+    },
+    {
+      "label": "Transform",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L6",
+      "id": "joel_ascenseurautomatique_cs_transform",
+      "community": 5,
+      "norm_label": "transform"
+    },
+    {
+      "label": "AudioSource",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L14",
+      "id": "joel_ascenseurautomatique_cs_audiosource",
+      "community": 5,
+      "norm_label": "audiosource"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L17",
+      "id": "joel_ascenseurautomatique_cs_float",
+      "community": 5,
+      "norm_label": "float"
+    },
+    {
+      "label": "Vector3",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L21",
+      "id": "joel_ascenseurautomatique_cs_vector3",
+      "community": 5,
+      "norm_label": "vector3"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L24",
+      "id": "joel_ascenseurautomatique_cs_bool",
+      "community": 5,
+      "norm_label": "bool"
+    },
+    {
+      "label": ".Start()",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L36",
+      "id": "joel_ascenseurautomatique_ascenseurautomatique_start",
+      "community": 5,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".Update()",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L42",
+      "id": "joel_ascenseurautomatique_ascenseurautomatique_update",
+      "community": 5,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".ActualiserMouvementPortes()",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L67",
+      "id": "joel_ascenseurautomatique_ascenseurautomatique_actualisermouvementportes",
+      "community": 5,
+      "norm_label": ".actualisermouvementportes()"
+    },
+    {
+      "label": ".SequenceVoyage()",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L82",
+      "id": "joel_ascenseurautomatique_ascenseurautomatique_sequencevoyage",
+      "community": 5,
+      "norm_label": ".sequencevoyage()"
+    },
+    {
+      "label": "IEnumerator",
+      "file_type": "code",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L82",
+      "id": "joel_ascenseurautomatique_cs_ienumerator",
+      "community": 5,
+      "norm_label": "ienumerator"
+    },
+    {
+      "label": "AudioManager (singleton)",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/AudioManager.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "audiomanager_AudioManager",
+      "community": 14,
+      "norm_label": "audiomanager (singleton)"
+    },
+    {
+      "label": "AudioManager.StartMusic",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/AudioManager.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "audiomanager_StartMusic",
+      "community": 14,
+      "norm_label": "audiomanager.startmusic"
+    },
+    {
+      "label": "AudioManager.StartCreepyDistortion",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/AudioManager.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "audiomanager_StartCreepyDistortion",
+      "community": 14,
+      "norm_label": "audiomanager.startcreepydistortion"
+    },
+    {
+      "label": "AudioManager.ReturnNormalMusic",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/AudioManager.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "audiomanager_ReturnNormalMusic",
+      "community": 14,
+      "norm_label": "audiomanager.returnnormalmusic"
+    },
+    {
+      "label": "CreepyZoneManager (singleton)",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/CreepyZoneManager.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "creepyzonemanager_CreepyZoneManager",
+      "community": 14,
+      "norm_label": "creepyzonemanager (singleton)"
+    },
+    {
+      "label": "DebugTrigger",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/DebugTrigger.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "debugtrigger_DebugTrigger",
+      "community": 14,
+      "norm_label": "debugtrigger"
+    },
+    {
+      "label": "ElevatorWallFit",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/ElevatorWallFit.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "elevatorwallfit_ElevatorWallFit",
+      "community": 3,
+      "norm_label": "elevatorwallfit"
+    },
+    {
+      "label": "ElevatorWallFit.FitToWall (raycast push)",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/ElevatorWallFit.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "elevatorwallfit_FitToWall",
+      "community": 3,
+      "norm_label": "elevatorwallfit.fittowall (raycast push)"
+    },
+    {
+      "label": "Editor-time wall fitting via renderer bounds raycast",
+      "file_type": "rationale",
+      "source_file": "Assets/Scripts/ElevatorWallFit.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "elevatorwallfit_editor_tool_rationale",
+      "community": 3,
+      "norm_label": "editor-time wall fitting via renderer bounds raycast"
+    },
+    {
+      "label": "Etage2MusicTrigger",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/Etage2MusicTrigger.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "etage2musictrigger_Etage2MusicTrigger",
+      "community": 14,
+      "norm_label": "etage2musictrigger"
+    },
+    {
+      "label": "FootstepManager",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/FootstepManager.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "footstepmanager_FootstepManager",
+      "community": 3,
+      "norm_label": "footstepmanager"
+    },
+    {
+      "label": "GuitarMelody",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/GuitarMelody.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "guitarmelody_GuitarMelody",
+      "community": 18,
+      "norm_label": "guitarmelody"
+    },
+    {
+      "label": "GuitarMelody.SetSecondHand",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/GuitarMelody.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "guitarmelody_SetSecondHand",
+      "community": 18,
+      "norm_label": "guitarmelody.setsecondhand"
+    },
+    {
+      "label": "GuitarMelody.ClearSecondHand",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/GuitarMelody.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "guitarmelody_ClearSecondHand",
+      "community": 18,
+      "norm_label": "guitarmelody.clearsecondhand"
+    },
+    {
+      "label": "HoverFeedback",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/HoverFeedback.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "hoverfeedback_HoverFeedback",
+      "community": 20,
+      "norm_label": "hoverfeedback"
+    },
+    {
+      "label": "LaserToggle",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/LaserToggle.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "lasertoggle_LaserToggle",
+      "community": 19,
+      "norm_label": "lasertoggle"
+    },
+    {
+      "label": "MagnetReturn",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/MagnetReturn.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "magnetreturn_MagnetReturn",
+      "community": 20,
+      "norm_label": "magnetreturn"
+    },
+    {
+      "label": "MenuOpener",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/MenuOpener.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "menuopener_MenuOpener",
+      "community": 21,
+      "norm_label": "menuopener"
+    },
+    {
+      "label": "PaintingStareEffect",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/PaintingStareEffect.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "paintingstareeffect_PaintingStareEffect",
+      "community": 3,
+      "norm_label": "paintingstareeffect"
+    },
+    {
+      "label": "PaintingStareEffect.OnStare",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/PaintingStareEffect.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "paintingstareeffect_OnStare",
+      "community": 3,
+      "norm_label": "paintingstareeffect.onstare"
+    },
+    {
+      "label": "PaintingStareEffect.OnLookAway",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/PaintingStareEffect.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "paintingstareeffect_OnLookAway",
+      "community": 3,
+      "norm_label": "paintingstareeffect.onlookaway"
+    },
+    {
+      "label": "PorteAutomatique (proximity door)",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/PorteAutomatique.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "porteautomatique_PorteAutomatique",
+      "community": 3,
+      "norm_label": "porteautomatique (proximity door)"
+    },
+    {
+      "label": "SalleMurFlipExterieur (mesh flip)",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/SalleMurFlipExterieur.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sallemurflipexterieur_SalleMurFlipExterieur",
+      "community": 22,
+      "norm_label": "sallemurflipexterieur (mesh flip)"
+    },
+    {
+      "label": "SliderStep",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/SliderStep.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sliderstep_SliderStep",
+      "community": 19,
+      "norm_label": "sliderstep"
+    },
+    {
+      "label": "StareDetector (gaze raycast)",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/StareDetector.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "staredetector_StareDetector",
+      "community": 3,
+      "norm_label": "staredetector (gaze raycast)"
+    },
+    {
+      "label": "StareDetector.TriggerSuddenTeleport",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/StareDetector.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "staredetector_TriggerSuddenTeleport",
+      "community": 3,
+      "norm_label": "staredetector.triggersuddenteleport"
+    },
+    {
+      "label": "TwoHandPlayPose",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/TwoHandPlayPose.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "twohandplaypose_TwoHandPlayPose",
+      "community": 18,
+      "norm_label": "twohandplaypose"
+    },
+    {
+      "label": "Left/right hand detection by interactor GameObject name substring",
+      "file_type": "rationale",
+      "source_file": "Assets/Scripts/TwoHandPlayPose.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "twohandplaypose_handname_detection_rationale",
+      "community": 18,
+      "norm_label": "left/right hand detection by interactor gameobject name substring"
+    },
+    {
+      "label": "VRMenuSettings",
+      "file_type": "code",
+      "source_file": "Assets/Scripts/VRMenuSettings.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "vrmenusettings_VRMenuSettings",
+      "community": 19,
+      "norm_label": "vrmenusettings"
+    },
+    {
+      "label": "AscenseurAutomatique (elevator)",
+      "file_type": "code",
+      "source_file": "Assets/joel/AscenseurAutomatique.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ascenseurautomatique_AscenseurAutomatique",
+      "community": 3,
+      "norm_label": "ascenseurautomatique (elevator)"
+    },
+    {
+      "label": "AscenseurAutomatique.SequenceVoyage (close-wait-teleport-open)",
+      "file_type": "code",
+      "source_file": "Assets/joel/AscenseurAutomatique.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ascenseurautomatique_SequenceVoyage",
+      "community": 3,
+      "norm_label": "ascenseurautomatique.sequencevoyage (close-wait-teleport-open)"
+    },
+    {
+      "label": "Symmetric door easing via SmoothStep+MoveTowards",
+      "file_type": "rationale",
+      "source_file": "Assets/joel/AscenseurAutomatique.cs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ascenseurautomatique_symmetric_door_rationale",
+      "community": 3,
+      "norm_label": "symmetric door easing via smoothstep+movetowards"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_audiomanager_cs",
+      "target": "scripts_audiomanager_audiomanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_audiomanager_audiomanager",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_audiomanager_audiomanager",
+      "target": "scripts_audiomanager_audiomanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_audiomanager_audiomanager",
+      "target": "scripts_audiomanager_cs_audiosource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_audiomanager_audiomanager",
+      "target": "audiomixersnapshot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "scripts_audiomanager_audiomanager",
+      "target": "scripts_audiomanager_audiomanager_awake",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "scripts_audiomanager_audiomanager",
+      "target": "scripts_audiomanager_audiomanager_startmusic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "scripts_audiomanager_audiomanager",
+      "target": "scripts_audiomanager_audiomanager_startcreepydistortion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/AudioManager.cs",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "scripts_audiomanager_audiomanager",
+      "target": "scripts_audiomanager_audiomanager_returnnormalmusic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/CreepyZoneManager.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_creepyzonemanager_creepyzonemanager",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_debugtrigger_debugtrigger",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "scripts_elevatorwallfit_elevatorwallfit",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/Etage2MusicTrigger.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_etage2musictrigger_etage2musictrigger",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_footstepmanager_footstepmanager",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_hoverfeedback_hoverfeedback",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "scripts_lasertoggle_lasertoggle",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_magnetreturn_magnetreturn",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_menuopener_menuopener",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_paintingstareeffect_paintingstareeffect",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_porteautomatique_porteautomatique",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_sallemurflipexterieur_sallemurflipexterieur",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SliderStep.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_sliderstep_sliderstep",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_staredetector_staredetector",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "scripts_vrmenusettings_vrmenusettings",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "joel_ascenseurautomatique_ascenseurautomatique",
+      "target": "monobehaviour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/CreepyZoneManager.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_creepyzonemanager_cs",
+      "target": "scripts_creepyzonemanager_creepyzonemanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/CreepyZoneManager.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_creepyzonemanager_creepyzonemanager",
+      "target": "scripts_creepyzonemanager_creepyzonemanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/CreepyZoneManager.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_creepyzonemanager_creepyzonemanager",
+      "target": "scripts_creepyzonemanager_cs_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/CreepyZoneManager.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "scripts_creepyzonemanager_creepyzonemanager",
+      "target": "scripts_creepyzonemanager_creepyzonemanager_awake",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/CreepyZoneManager.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "scripts_creepyzonemanager_creepyzonemanager",
+      "target": "scripts_creepyzonemanager_creepyzonemanager_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_debugtrigger_cs",
+      "target": "scripts_debugtrigger_debugtrigger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "scripts_debugtrigger_debugtrigger",
+      "target": "scripts_debugtrigger_debugtrigger_ontriggerenter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scripts_debugtrigger_debugtrigger",
+      "target": "scripts_debugtrigger_debugtrigger_ontriggerstay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "scripts_debugtrigger_debugtrigger",
+      "target": "scripts_debugtrigger_debugtrigger_ontriggerexit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_debugtrigger_debugtrigger_ontriggerenter",
+      "target": "scripts_debugtrigger_cs_collider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_debugtrigger_debugtrigger_ontriggerstay",
+      "target": "scripts_debugtrigger_cs_collider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/DebugTrigger.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_debugtrigger_debugtrigger_ontriggerexit",
+      "target": "scripts_debugtrigger_cs_collider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "scripts_elevatorwallfit_cs",
+      "target": "scripts_elevatorwallfit_elevatorwallfit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "scripts_elevatorwallfit_cs",
+      "target": "scripts_elevatorwallfit_elevatorwallfiteditor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_elevatorwallfit_elevatorwallfit",
+      "target": "fitaxis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_elevatorwallfit_elevatorwallfit",
+      "target": "layermask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_elevatorwallfit_elevatorwallfit",
+      "target": "scripts_elevatorwallfit_cs_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_elevatorwallfit_elevatorwallfit",
+      "target": "scripts_elevatorwallfit_cs_transform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "scripts_elevatorwallfit_elevatorwallfit",
+      "target": "scripts_elevatorwallfit_elevatorwallfit_getdir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "scripts_elevatorwallfit_elevatorwallfit",
+      "target": "scripts_elevatorwallfit_elevatorwallfit_fittowall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "scripts_elevatorwallfit_elevatorwallfit_getdir",
+      "target": "scripts_elevatorwallfit_cs_vector3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "scripts_elevatorwallfit_elevatorwallfit_fittowall",
+      "target": "scripts_elevatorwallfit_elevatorwallfit_getdir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "scripts_elevatorwallfit_elevatorwallfit_fittowall",
+      "target": "scripts_elevatorwallfit_cs_contextmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "scripts_elevatorwallfit_elevatorwallfiteditor_oninspectorgui",
+      "target": "scripts_elevatorwallfit_elevatorwallfit_fittowall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "scripts_elevatorwallfit_elevatorwallfiteditor",
+      "target": "editor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/ElevatorWallFit.cs",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "scripts_elevatorwallfit_elevatorwallfiteditor",
+      "target": "scripts_elevatorwallfit_elevatorwallfiteditor_oninspectorgui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/Etage2MusicTrigger.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_etage2musictrigger_cs",
+      "target": "scripts_etage2musictrigger_etage2musictrigger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/Etage2MusicTrigger.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "scripts_etage2musictrigger_etage2musictrigger",
+      "target": "scripts_etage2musictrigger_etage2musictrigger_ontriggerenter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/Etage2MusicTrigger.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_etage2musictrigger_etage2musictrigger_ontriggerenter",
+      "target": "scripts_etage2musictrigger_cs_collider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_footstepmanager_cs",
+      "target": "scripts_footstepmanager_footstepmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_footstepmanager_footstepmanager",
+      "target": "scripts_footstepmanager_cs_audiosource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_footstepmanager_footstepmanager",
+      "target": "scripts_footstepmanager_cs_transform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_footstepmanager_footstepmanager",
+      "target": "scripts_footstepmanager_cs_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_footstepmanager_footstepmanager",
+      "target": "scripts_footstepmanager_cs_vector3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scripts_footstepmanager_footstepmanager",
+      "target": "scripts_footstepmanager_footstepmanager_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/FootstepManager.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "scripts_footstepmanager_footstepmanager",
+      "target": "scripts_footstepmanager_footstepmanager_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_cs",
+      "target": "scripts_guitarmelody_guitarmelody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_cs_audiosource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_cs_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_cs_xrgrabinteractable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "xrbaseinteractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_guitarmelody_awake",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_guitarmelody_ondestroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_guitarmelody_onfirsthandgrab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_guitarmelody_onfirsthandrelease",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_guitarmelody_setsecondhand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_guitarmelody_clearsecondhand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_guitarmelody_trystartorstop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_guitarmelody_startmelody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody",
+      "target": "scripts_guitarmelody_guitarmelody_stopmelody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L48",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_guitarmelody_guitarmelody_setsecondhand",
+      "target": "xrbaseinteractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_guitarmelody_guitarmelody_clearsecondhand",
+      "target": "xrbaseinteractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_guitarmelody_guitarmelody_onfirsthandgrab",
+      "target": "scripts_guitarmelody_cs_selectentereventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody_onfirsthandgrab",
+      "target": "scripts_guitarmelody_guitarmelody_trystartorstop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L41",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_guitarmelody_guitarmelody_onfirsthandrelease",
+      "target": "scripts_guitarmelody_cs_selectexiteventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody_onfirsthandrelease",
+      "target": "scripts_guitarmelody_guitarmelody_stopmelody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody_setsecondhand",
+      "target": "scripts_guitarmelody_guitarmelody_trystartorstop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody_clearsecondhand",
+      "target": "scripts_guitarmelody_guitarmelody_stopmelody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody_trystartorstop",
+      "target": "scripts_guitarmelody_guitarmelody_startmelody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/GuitarMelody.cs",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "scripts_guitarmelody_guitarmelody_trystartorstop",
+      "target": "scripts_guitarmelody_guitarmelody_stopmelody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_hoverfeedback_cs",
+      "target": "scripts_hoverfeedback_hoverfeedback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_hoverfeedback_hoverfeedback",
+      "target": "scripts_hoverfeedback_cs_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_hoverfeedback_hoverfeedback",
+      "target": "scripts_hoverfeedback_cs_gameobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_hoverfeedback_hoverfeedback",
+      "target": "scripts_hoverfeedback_cs_vector3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_hoverfeedback_hoverfeedback",
+      "target": "xrbaseinteractable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_hoverfeedback_hoverfeedback",
+      "target": "scripts_hoverfeedback_cs_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "scripts_hoverfeedback_hoverfeedback",
+      "target": "scripts_hoverfeedback_hoverfeedback_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_hoverfeedback_hoverfeedback",
+      "target": "scripts_hoverfeedback_hoverfeedback_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "scripts_hoverfeedback_hoverfeedback",
+      "target": "scripts_hoverfeedback_hoverfeedback_onhover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/HoverFeedback.cs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scripts_hoverfeedback_hoverfeedback_start",
+      "target": "scripts_hoverfeedback_hoverfeedback_onhover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "scripts_lasertoggle_cs",
+      "target": "scripts_lasertoggle_lasertoggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_lasertoggle_lasertoggle",
+      "target": "scripts_lasertoggle_cs_inputactionreference",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_lasertoggle_lasertoggle",
+      "target": "xrrayinteractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "scripts_lasertoggle_lasertoggle",
+      "target": "scripts_lasertoggle_lasertoggle_onenable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "scripts_lasertoggle_lasertoggle",
+      "target": "scripts_lasertoggle_lasertoggle_ondisable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "scripts_lasertoggle_lasertoggle",
+      "target": "scripts_lasertoggle_lasertoggle_ontogglelasers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/LaserToggle.cs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_lasertoggle_lasertoggle_ontogglelasers",
+      "target": "scripts_lasertoggle_cs_callbackcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_magnetreturn_cs",
+      "target": "scripts_magnetreturn_magnetreturn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_magnetreturn_magnetreturn",
+      "target": "scripts_magnetreturn_cs_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_magnetreturn_magnetreturn",
+      "target": "scripts_magnetreturn_cs_vector3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_magnetreturn_magnetreturn",
+      "target": "scripts_magnetreturn_cs_quaternion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_magnetreturn_magnetreturn",
+      "target": "scripts_magnetreturn_cs_xrgrabinteractable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_magnetreturn_magnetreturn",
+      "target": "scripts_magnetreturn_cs_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "scripts_magnetreturn_magnetreturn",
+      "target": "scripts_magnetreturn_magnetreturn_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "scripts_magnetreturn_magnetreturn",
+      "target": "scripts_magnetreturn_magnetreturn_tryreturn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "scripts_magnetreturn_magnetreturn",
+      "target": "scripts_magnetreturn_magnetreturn_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MagnetReturn.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "scripts_magnetreturn_magnetreturn_start",
+      "target": "scripts_magnetreturn_magnetreturn_tryreturn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_menuopener_cs",
+      "target": "scripts_menuopener_menuopener",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_menuopener_menuopener",
+      "target": "scripts_menuopener_cs_inputactionreference",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_menuopener_menuopener",
+      "target": "scripts_menuopener_cs_gameobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_menuopener_menuopener",
+      "target": "scripts_menuopener_cs_transform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scripts_menuopener_menuopener",
+      "target": "scripts_menuopener_menuopener_onenable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "scripts_menuopener_menuopener",
+      "target": "scripts_menuopener_menuopener_ondisable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "scripts_menuopener_menuopener",
+      "target": "scripts_menuopener_menuopener_onopenmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/MenuOpener.cs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_menuopener_menuopener_onopenmenu",
+      "target": "scripts_menuopener_cs_callbackcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_paintingstareeffect_cs",
+      "target": "scripts_paintingstareeffect_paintingstareeffect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_paintingstareeffect_paintingstareeffect",
+      "target": "material",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_paintingstareeffect_paintingstareeffect",
+      "target": "renderer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_paintingstareeffect_paintingstareeffect",
+      "target": "scripts_paintingstareeffect_cs_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_paintingstareeffect_paintingstareeffect",
+      "target": "scripts_paintingstareeffect_cs_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "scripts_paintingstareeffect_paintingstareeffect",
+      "target": "scripts_paintingstareeffect_paintingstareeffect_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "scripts_paintingstareeffect_paintingstareeffect",
+      "target": "scripts_paintingstareeffect_paintingstareeffect_onstare",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PaintingStareEffect.cs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "scripts_paintingstareeffect_paintingstareeffect",
+      "target": "scripts_paintingstareeffect_paintingstareeffect_onlookaway",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_porteautomatique_cs",
+      "target": "scripts_porteautomatique_porteautomatique",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_porteautomatique_porteautomatique",
+      "target": "scripts_porteautomatique_cs_transform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_porteautomatique_porteautomatique",
+      "target": "scripts_porteautomatique_cs_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_porteautomatique_porteautomatique",
+      "target": "scripts_porteautomatique_cs_vector3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "scripts_porteautomatique_porteautomatique",
+      "target": "scripts_porteautomatique_porteautomatique_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/PorteAutomatique.cs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "scripts_porteautomatique_porteautomatique",
+      "target": "scripts_porteautomatique_porteautomatique_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_sallemurflipexterieur_cs",
+      "target": "scripts_sallemurflipexterieur_sallemurflipexterieur",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_sallemurflipexterieur_sallemurflipexterieur",
+      "target": "scripts_sallemurflipexterieur_cs_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "scripts_sallemurflipexterieur_sallemurflipexterieur",
+      "target": "scripts_sallemurflipexterieur_sallemurflipexterieur_awake",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "scripts_sallemurflipexterieur_sallemurflipexterieur",
+      "target": "scripts_sallemurflipexterieur_sallemurflipexterieur_flip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "scripts_sallemurflipexterieur_sallemurflipexterieur_awake",
+      "target": "scripts_sallemurflipexterieur_sallemurflipexterieur_flip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SalleMurFlipExterieur.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "scripts_sallemurflipexterieur_sallemurflipexterieur_flip",
+      "target": "scripts_sallemurflipexterieur_cs_contextmenu",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SliderStep.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_sliderstep_cs",
+      "target": "scripts_sliderstep_sliderstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SliderStep.cs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_sliderstep_sliderstep",
+      "target": "scripts_sliderstep_cs_slider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SliderStep.cs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "scripts_sliderstep_sliderstep",
+      "target": "scripts_sliderstep_sliderstep_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/SliderStep.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "scripts_sliderstep_sliderstep",
+      "target": "scripts_sliderstep_sliderstep_onsliderchanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_staredetector_cs",
+      "target": "scripts_staredetector_staredetector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_staredetector_staredetector",
+      "target": "paintingstareeffect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "scripts_staredetector_staredetector",
+      "target": "scripts_staredetector_staredetector_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "scripts_staredetector_staredetector",
+      "target": "scripts_staredetector_staredetector_handlestaredetection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "scripts_staredetector_staredetector",
+      "target": "scripts_staredetector_staredetector_triggersuddenteleport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "scripts_staredetector_staredetector",
+      "target": "scripts_staredetector_staredetector_doquickteleport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "scripts_staredetector_staredetector_update",
+      "target": "scripts_staredetector_staredetector_handlestaredetection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "scripts_staredetector_staredetector_handlestaredetection",
+      "target": "scripts_staredetector_staredetector_triggersuddenteleport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "scripts_staredetector_staredetector_triggersuddenteleport",
+      "target": "scripts_staredetector_staredetector_doquickteleport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L58",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_staredetector_staredetector_doquickteleport",
+      "target": "scripts_staredetector_cs_transform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L58",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_staredetector_staredetector_doquickteleport",
+      "target": "scripts_staredetector_cs_vector3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/StareDetector.cs",
+      "source_location": "L58",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "scripts_staredetector_staredetector_doquickteleport",
+      "target": "scripts_staredetector_cs_ienumerator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_twohandplaypose_cs",
+      "target": "scripts_twohandplaypose_twohandplaypose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_cs_transform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_cs_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_cs_audiosource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "audioclip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_cs_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_cs_xrgrabinteractable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "rigidbody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_cs_vector3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_cs_quaternion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_twohandplaypose_awake",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_twohandplaypose_ondestroy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_twohandplaypose_onselectentered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_twohandplaypose_onselectexited",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_twohandplaypose_playgrabsound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_twohandplaypose_lateupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "scripts_twohandplaypose_twohandplaypose",
+      "target": "scripts_twohandplaypose_twohandplaypose_islefthand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L66",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_twohandplaypose_twohandplaypose_onselectentered",
+      "target": "scripts_twohandplaypose_cs_selectentereventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "scripts_twohandplaypose_twohandplaypose_onselectentered",
+      "target": "scripts_twohandplaypose_twohandplaypose_playgrabsound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L81",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_twohandplaypose_twohandplaypose_onselectexited",
+      "target": "scripts_twohandplaypose_cs_selectexiteventargs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "scripts_twohandplaypose_twohandplaypose_lateupdate",
+      "target": "scripts_twohandplaypose_twohandplaypose_islefthand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/TwoHandPlayPose.cs",
+      "source_location": "L147",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "scripts_twohandplaypose_twohandplaypose_islefthand",
+      "target": "ixrselectinteractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "scripts_vrmenusettings_cs",
+      "target": "scripts_vrmenusettings_vrmenusettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_vrmenusettings_vrmenusettings",
+      "target": "scripts_vrmenusettings_cs_transform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_vrmenusettings_vrmenusettings",
+      "target": "continuousmoveproviderbase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "field",
+      "source": "scripts_vrmenusettings_vrmenusettings",
+      "target": "scripts_vrmenusettings_cs_slider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "scripts_vrmenusettings_vrmenusettings",
+      "target": "scripts_vrmenusettings_vrmenusettings_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "scripts_vrmenusettings_vrmenusettings",
+      "target": "scripts_vrmenusettings_vrmenusettings_onsizechanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Scripts/VRMenuSettings.cs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "scripts_vrmenusettings_vrmenusettings",
+      "target": "scripts_vrmenusettings_vrmenusettings_onspeedchanged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "joel_ascenseurautomatique_cs",
+      "target": "joel_ascenseurautomatique_ascenseurautomatique",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "source": "joel_ascenseurautomatique_ascenseurautomatique",
+      "target": "joel_ascenseurautomatique_cs_transform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "field",
+      "source": "joel_ascenseurautomatique_ascenseurautomatique",
+      "target": "joel_ascenseurautomatique_cs_audiosource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "field",
+      "source": "joel_ascenseurautomatique_ascenseurautomatique",
+      "target": "joel_ascenseurautomatique_cs_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "field",
+      "source": "joel_ascenseurautomatique_ascenseurautomatique",
+      "target": "joel_ascenseurautomatique_cs_vector3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "field",
+      "source": "joel_ascenseurautomatique_ascenseurautomatique",
+      "target": "joel_ascenseurautomatique_cs_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "joel_ascenseurautomatique_ascenseurautomatique",
+      "target": "joel_ascenseurautomatique_ascenseurautomatique_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "joel_ascenseurautomatique_ascenseurautomatique",
+      "target": "joel_ascenseurautomatique_ascenseurautomatique_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "joel_ascenseurautomatique_ascenseurautomatique",
+      "target": "joel_ascenseurautomatique_ascenseurautomatique_actualisermouvementportes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "joel_ascenseurautomatique_ascenseurautomatique",
+      "target": "joel_ascenseurautomatique_ascenseurautomatique_sequencevoyage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "joel_ascenseurautomatique_ascenseurautomatique_update",
+      "target": "joel_ascenseurautomatique_ascenseurautomatique_actualisermouvementportes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "joel_ascenseurautomatique_ascenseurautomatique_update",
+      "target": "joel_ascenseurautomatique_ascenseurautomatique_sequencevoyage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "joel/AscenseurAutomatique.cs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "joel_ascenseurautomatique_ascenseurautomatique_sequencevoyage",
+      "target": "joel_ascenseurautomatique_cs_ienumerator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/Etage2MusicTrigger.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "etage2musictrigger_Etage2MusicTrigger",
+      "target": "audiomanager_AudioManager"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/AudioManager.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "audiomanager_AudioManager",
+      "target": "audiomanager_StartMusic"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/AudioManager.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "audiomanager_AudioManager",
+      "target": "audiomanager_StartCreepyDistortion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/AudioManager.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "audiomanager_AudioManager",
+      "target": "audiomanager_ReturnNormalMusic"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/Etage2MusicTrigger.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "etage2musictrigger_Etage2MusicTrigger",
+      "target": "audiomanager_StartMusic"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "Assets/Scripts/CreepyZoneManager.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "creepyzonemanager_CreepyZoneManager",
+      "target": "audiomanager_StartCreepyDistortion"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "Assets/Scripts/DebugTrigger.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "debugtrigger_DebugTrigger",
+      "target": "creepyzonemanager_CreepyZoneManager"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": "Assets/Scripts/CreepyZoneManager.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "creepyzonemanager_CreepyZoneManager",
+      "target": "paintingstareeffect_PaintingStareEffect"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/ElevatorWallFit.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "elevatorwallfit_ElevatorWallFit",
+      "target": "elevatorwallfit_FitToWall"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "Assets/Scripts/ElevatorWallFit.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "elevatorwallfit_ElevatorWallFit",
+      "target": "ascenseurautomatique_AscenseurAutomatique"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Assets/Scripts/ElevatorWallFit.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "elevatorwallfit_editor_tool_rationale",
+      "target": "elevatorwallfit_FitToWall"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": "Assets/Scripts/PorteAutomatique.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "porteautomatique_PorteAutomatique",
+      "target": "footstepmanager_FootstepManager"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Assets/Scripts/GuitarMelody.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "guitarmelody_GuitarMelody",
+      "target": "twohandplaypose_TwoHandPlayPose"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/GuitarMelody.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "guitarmelody_GuitarMelody",
+      "target": "guitarmelody_SetSecondHand"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/GuitarMelody.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "guitarmelody_GuitarMelody",
+      "target": "guitarmelody_ClearSecondHand"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": "Assets/Scripts/HoverFeedback.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "hoverfeedback_HoverFeedback",
+      "target": "magnetreturn_MagnetReturn"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "Assets/Scripts/LaserToggle.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lasertoggle_LaserToggle",
+      "target": "vrmenusettings_VRMenuSettings"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/StareDetector.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "staredetector_StareDetector",
+      "target": "paintingstareeffect_PaintingStareEffect"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/PaintingStareEffect.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "paintingstareeffect_PaintingStareEffect",
+      "target": "paintingstareeffect_OnStare"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/PaintingStareEffect.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "paintingstareeffect_PaintingStareEffect",
+      "target": "paintingstareeffect_OnLookAway"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/StareDetector.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "staredetector_StareDetector",
+      "target": "paintingstareeffect_OnStare"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/StareDetector.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "staredetector_StareDetector",
+      "target": "paintingstareeffect_OnLookAway"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/StareDetector.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "staredetector_TriggerSuddenTeleport",
+      "target": "paintingstareeffect_OnLookAway"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Assets/joel/AscenseurAutomatique.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ascenseurautomatique_AscenseurAutomatique",
+      "target": "porteautomatique_PorteAutomatique"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Assets/Scripts/SliderStep.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "sliderstep_SliderStep",
+      "target": "vrmenusettings_VRMenuSettings"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/Scripts/StareDetector.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "staredetector_StareDetector",
+      "target": "staredetector_TriggerSuddenTeleport"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "Assets/Scripts/StareDetector.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "staredetector_TriggerSuddenTeleport",
+      "target": "ascenseurautomatique_SequenceVoyage"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Assets/Scripts/TwoHandPlayPose.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "twohandplaypose_handname_detection_rationale",
+      "target": "twohandplaypose_TwoHandPlayPose"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/joel/AscenseurAutomatique.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ascenseurautomatique_AscenseurAutomatique",
+      "target": "ascenseurautomatique_SequenceVoyage"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Assets/joel/AscenseurAutomatique.cs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ascenseurautomatique_symmetric_door_rationale",
+      "target": "ascenseurautomatique_SequenceVoyage"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "vr_grab_interactable_scripts",
+      "label": "VR grab-interactable scripts (XRGrabInteractable select events)",
+      "nodes": [
+        "guitarmelody_GuitarMelody",
+        "twohandplaypose_TwoHandPlayPose",
+        "magnetreturn_MagnetReturn",
+        "hoverfeedback_HoverFeedback"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Assets/Scripts/GuitarMelody.cs"
+    },
+    {
+      "id": "proximity_trigger_scripts",
+      "label": "Player proximity / trigger detection scripts",
+      "nodes": [
+        "porteautomatique_PorteAutomatique",
+        "ascenseurautomatique_AscenseurAutomatique",
+        "creepyzonemanager_CreepyZoneManager",
+        "etage2musictrigger_Etage2MusicTrigger",
+        "debugtrigger_DebugTrigger"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Assets/Scripts/PorteAutomatique.cs"
+    },
+    {
+      "id": "elevator_travel_flow",
+      "label": "Elevator close-wait-teleport-open flow",
+      "nodes": [
+        "ascenseurautomatique_AscenseurAutomatique",
+        "ascenseurautomatique_SequenceVoyage",
+        "ascenseurautomatique_symmetric_door_rationale"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Assets/joel/AscenseurAutomatique.cs"
+    }
+  ],
+  "built_at_commit": "e3a5857eeb1ff4e56c0b32eeec0ed4cb3d639c66"
+}

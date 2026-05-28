@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Petals5_basecolor.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Petals6_basecolor.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Petals7_basecolor.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Petals8_basecolor.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Petals9_basecolor.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Ribbons1_basecolor.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Sepals1_basecolor.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Sepals2_basecolor.jpg

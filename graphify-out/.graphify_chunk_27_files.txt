@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wilson-football\textures\upper.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wilson-football\textures\upperb.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wilson-football\textures\uppers.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Leaves10_basecolor.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Leaves1_basecolor.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Leaves2_basecolor.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Leaves3_basecolor.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\source\fbx\fbx\textures\Leaves4_basecolor.jpg
