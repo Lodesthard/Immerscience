@@ -2182,16 +2182,13 @@ MonoBehaviour:
   normalMaterial: {fileID: 2100000, guid: b7f50e9c252996d42ac83887b74814da, type: 2}
   renderer: {fileID: 255117533}
   activeEffect: 2
-  roomDirection: 0
-  hallucinationDuration: 2.5
+  vanishDuration: 0.6
+  glitchIntensity: 0.3
+  glitchShakeSpeed: 45
   creepyMaterial: {fileID: 2100000, guid: 2a5d5f77d5c7fd643bc888f77f8fa14e, type: 2}
   stareThreshold: 3
   sinkDistance: 1.5
   sinkSpeed: 3
-  detachForwardDistance: 0.6
-  transitionSpeed: 2
-  floatRandomRange: 0.15
-  floatDriftSpeed: 0.8
 --- !u!1001 &265995848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7901,16 +7898,13 @@ MonoBehaviour:
   normalMaterial: {fileID: 2100000, guid: a4c40de7089440d4ba066afa97394bac, type: 2}
   renderer: {fileID: 889922311}
   activeEffect: 0
-  roomDirection: 0
-  hallucinationDuration: 2.5
+  vanishDuration: 0.6
+  glitchIntensity: 0.3
+  glitchShakeSpeed: 45
   creepyMaterial: {fileID: 2100000, guid: 3c5623cec6058f54bbf0cdac43f1fbe7, type: 2}
   stareThreshold: 3
   sinkDistance: 1.5
   sinkSpeed: 3
-  detachForwardDistance: 0.6
-  transitionSpeed: 2
-  floatRandomRange: 0.15
-  floatDriftSpeed: 0.8
 --- !u!1001 &894690960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8803,15 +8797,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.99
+      value: 1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.59
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.5994429
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7071068
+      value: 0.8004176
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalRotation.y
@@ -8823,7 +8821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: 106.34
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -8985,6 +8983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tab5
       objectReference: {fileID: 0}
+    - target: {fileID: 6893035399887462546, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.34
+      objectReference: {fileID: 0}
     - target: {fileID: 7429144973223650827, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.46
@@ -9024,6 +9026,10 @@ PrefabInstance:
     - target: {fileID: 8085759435597386033, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.0569
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183479159584618570, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.51
       objectReference: {fileID: 0}
     - target: {fileID: 9167922291488625028, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9146,10 +9152,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5425331572631767777, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1739697666}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3592452621839847065, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2083309775}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
 --- !u!4 &1069305887 stripped
 Transform:
@@ -12159,16 +12162,13 @@ MonoBehaviour:
   normalMaterial: {fileID: 2100000, guid: b84d86778f9e62746890958165231cb6, type: 2}
   renderer: {fileID: 1383577646}
   activeEffect: 1
-  roomDirection: 0
-  hallucinationDuration: 2.5
+  vanishDuration: 0.6
+  glitchIntensity: 0.3
+  glitchShakeSpeed: 45
   creepyMaterial: {fileID: 2100000, guid: 82b51dc7a6e51cd4e9a256ac8a9e541b, type: 2}
   stareThreshold: 3
   sinkDistance: 1.5
   sinkSpeed: 3
-  detachForwardDistance: 0.6
-  transitionSpeed: 2
-  floatRandomRange: 0.15
-  floatDriftSpeed: 0.8
 --- !u!1001 &1386705732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14740,16 +14740,13 @@ MonoBehaviour:
   normalMaterial: {fileID: 2100000, guid: 2d39390447c3c6c4888149972d73e1d9, type: 2}
   renderer: {fileID: 1654175778}
   activeEffect: 1
-  roomDirection: 0
-  hallucinationDuration: 2.5
+  vanishDuration: 0.6
+  glitchIntensity: 0.3
+  glitchShakeSpeed: 45
   creepyMaterial: {fileID: 2100000, guid: 379dfeb10516424459671e0ad19cdd8c, type: 2}
   stareThreshold: 3
   sinkDistance: 1.5
   sinkSpeed: 3
-  detachForwardDistance: 0.6
-  transitionSpeed: 2
-  floatRandomRange: 0.15
-  floatDriftSpeed: 0.8
 --- !u!1 &1662455051 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3747444286459136214, guid: 5f936e75b55cb7e4aa66efea37a55df5, type: 3}
@@ -15079,16 +15076,13 @@ MonoBehaviour:
   normalMaterial: {fileID: 2100000, guid: 33e0acfa40c167545840f32917f91ced, type: 2}
   renderer: {fileID: 1674298535}
   activeEffect: 0
-  roomDirection: 0
-  hallucinationDuration: 2.5
+  vanishDuration: 0.6
+  glitchIntensity: 0.3
+  glitchShakeSpeed: 45
   creepyMaterial: {fileID: 2100000, guid: 4ed3d9e3041a78b41b88b349b0d1a3a7, type: 2}
   stareThreshold: 3
   sinkDistance: 1.5
   sinkSpeed: 3
-  detachForwardDistance: 0.6
-  transitionSpeed: 2
-  floatRandomRange: 0.15
-  floatDriftSpeed: 0.8
 --- !u!4 &1680099972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2774220344278030320, guid: 479f849918f70904aa75293e022acfd9, type: 3}
@@ -16034,6 +16028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83ed1deacfeb544084db97009bab7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  directLookThreshold: 0.85
 --- !u!1001 &1734295912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17597,16 +17592,13 @@ MonoBehaviour:
   normalMaterial: {fileID: 2100000, guid: d621b06b75b93ce48b1e8463d44f90c8, type: 2}
   renderer: {fileID: 1885712251}
   activeEffect: 2
-  roomDirection: 0
-  hallucinationDuration: 2.5
+  vanishDuration: 0.6
+  glitchIntensity: 0.3
+  glitchShakeSpeed: 45
   creepyMaterial: {fileID: 2100000, guid: 6fd06d2c8dcab79429901b18ecdb1a16, type: 2}
   stareThreshold: 3
   sinkDistance: 1.5
   sinkSpeed: 3
-  detachForwardDistance: 0.6
-  transitionSpeed: 2
-  floatRandomRange: 0.15
-  floatDriftSpeed: 0.8
 --- !u!4 &1893210048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9014170785475729501, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
@@ -18676,16 +18668,13 @@ MonoBehaviour:
   normalMaterial: {fileID: 2100000, guid: eb7d775554b55bb4994cb74c4236a9ea, type: 2}
   renderer: {fileID: 1963502141}
   activeEffect: 2
-  roomDirection: 0
-  hallucinationDuration: 2.5
+  vanishDuration: 0.29
+  glitchIntensity: 1.13
+  glitchShakeSpeed: 45
   creepyMaterial: {fileID: 2100000, guid: dc3de555f4e19604195b39c7e74e9d65, type: 2}
   stareThreshold: 3
   sinkDistance: 1.5
   sinkSpeed: 3
-  detachForwardDistance: 0.6
-  transitionSpeed: 2
-  floatRandomRange: 0.15
-  floatDriftSpeed: 0.8
 --- !u!1 &1970631435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3412649390972202448, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
@@ -19346,27 +19335,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1427151679}
   m_SourcePrefab: {fileID: -5645937942226959685, guid: 1c030817484b30d428a5dd4314ff92c0, type: 3}
---- !u!1 &2083309773 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3592452621839847065, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
-  m_PrefabInstance: {fileID: 1069305886}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2083309775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083309773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7e5cab9738468c48bbe17ee466206cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zoneDelayThreshold: 5
-  upwardTiltAngle: -30
-  sidewardTwistAngle: 25
-  rotationSpeed: 4
 --- !u!1001 &2086550390
 PrefabInstance:
   m_ObjectHideFlags: 0

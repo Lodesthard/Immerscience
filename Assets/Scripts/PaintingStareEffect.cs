@@ -5,22 +5,20 @@ public class PaintingStareEffect : MonoBehaviour
     public Material normalMaterial;
     public Renderer renderer;
 
-    public enum EffectType { CreepyDistortion, SinkIntoWall, HoverInAir }
-    public enum PushDirection { WorldForward, WorldBackward, WorldLeft, WorldRight }
+    public enum EffectType { CreepyDistortion, SinkThroughWall, DisappearGlitch }
     
     [Header("Choose ONE Effect for this Painting")]
     public EffectType activeEffect = EffectType.CreepyDistortion;
 
-    [Header("Direction Into The Open Room")]
-    [Tooltip("Which direction points AWAY from the wall into the walking space?")]
-    public PushDirection roomDirection = PushDirection.WorldForward;
-
-    [Header("Hallucination Settings (New)")]
-    [Tooltip("How many seconds the physical movement lasts before it snaps back automatically.")]
-    public float hallucinationDuration = 2.5f;
-    private float currentHallucinationTimer = 0f;
-    private bool hallucinationEnded = false;
-    private bool isBeingStaredAt = false;
+    [Header("Fast Glitch Settings")]
+    [Tooltip("How fast the painting shrinks and glitches away.")]
+    public float vanishDuration = 0.4f;
+    [Tooltip("How violent the fast glitch vibration is.")]
+    public float glitchIntensity = 0.25f;
+    public float glitchShakeSpeed = 50f;
+    
+    private float currentVanishTimer = 0f;
+    private bool isGlitchedOut = false;
 
     [Header("1. Creepy Distortion Settings")]
     public Material creepyMaterial;
@@ -28,25 +26,14 @@ public class PaintingStareEffect : MonoBehaviour
     private float stareTime = 0f;
     private bool isCreepy = false;
 
-    [Header("2. Sinking Wall Settings")]
-    [Tooltip("Distance it sinks back into the wall frame.")]
-    public float sinkDistance = 1.5f; 
-    public float sinkSpeed = 3.0f;
-
-    [Header("3. Weightless Air Hover Settings")]
-    [Tooltip("How many meters the painting pops out into the room space.")]
-    public float detachForwardDistance = 0.6f; 
-    public float transitionSpeed = 2.0f;
-    [Tooltip("How wide/far the random floating movement area is.")]
-    public float floatRandomRange = 0.15f; 
-    [Tooltip("How slow and smooth the random drift is.")]
-    public float floatDriftSpeed = 0.8f;
+    [Header("2. Sink THROUGH Wall Settings")]
+    [Tooltip("Distance it deep-dives straight BACKWARDS through its own wall plane.")]
+    public float sinkDistance = 2.0f; 
+    public float sinkSpeed = 8.0f;
 
     private Vector3 originalPosition;
     private Vector3 currentTargetPosition;
-    private float noiseSeedX;
-    private float noiseSeedY;
-    private float noiseSeedZ;
+    private Vector3 originalScale;
 
     private void Start()
     {
@@ -56,130 +43,119 @@ public class PaintingStareEffect : MonoBehaviour
         if (normalMaterial != null && renderer != null)
             renderer.material = normalMaterial;
 
-        // Save the home position
+        // Cache native layout scales
         originalPosition = transform.position;
         currentTargetPosition = originalPosition;
-
-        // Generate unique random seeds for organic drifting variance
-        noiseSeedX = Random.Range(0f, 100f);
-        noiseSeedY = Random.Range(0f, 100f);
-        noiseSeedZ = Random.Range(0f, 100f);
+        originalScale = transform.localScale;
     }
 
     private void Update()
     {
-        // --- TIMER FOR MOVING HALLUCINATIONS ---
-        // Exclude CreepyDistortion so it is completely unaffected by the timer
-        if (isBeingStaredAt && !hallucinationEnded && activeEffect != EffectType.CreepyDistortion)
-        {
-            currentHallucinationTimer += Time.deltaTime;
-            if (currentHallucinationTimer >= hallucinationDuration)
-            {
-                currentTargetPosition = originalPosition;
-                hallucinationEnded = true;
-            }
-        }
-
-        // --- TYPE 2: SINK INTO WALL ---
-        if (activeEffect == EffectType.SinkIntoWall)
+        // --- TYPE 1: SINK THROUGH WALL ---
+        if (activeEffect == EffectType.SinkThroughWall)
         {
             transform.position = Vector3.Lerp(transform.position, currentTargetPosition, Time.deltaTime * sinkSpeed);
         }
         
-        // --- TYPE 3: WEIGHTLESS FLOAT/DRIFT ---
-        else if (activeEffect == EffectType.HoverInAir)
+        // --- TYPE 2: FAST GLITCH AND DISAPPEAR ---
+        else if (activeEffect == EffectType.DisappearGlitch)
         {
-            // 1. Linearly move between the wall position and the floating point in space
-            transform.position = Vector3.Lerp(transform.position, currentTargetPosition, Time.deltaTime * transitionSpeed);
-
-            // 2. If it has detached, layer the organic random 3D drift on top (only if timer hasn't expired)
-            if (currentTargetPosition != originalPosition && !hallucinationEnded)
+            if (isGlitchedOut)
             {
-                float timeFactor = Time.time * floatDriftSpeed;
-                
-                // Calculate smooth random offsets using Perlin Noise
-                float offsetX = (Mathf.PerlinNoise(noiseSeedX + timeFactor, 0f) - 0.5f) * floatRandomRange;
-                float offsetY = (Mathf.PerlinNoise(0f, noiseSeedY + timeFactor) - 0.5f) * floatRandomRange;
-                float offsetZ = (Mathf.PerlinNoise(noiseSeedZ + timeFactor, noiseSeedZ) - 0.5f) * floatRandomRange;
+                currentVanishTimer += Time.deltaTime;
+                float progress = Mathf.Clamp01(currentVanishTimer / vanishDuration);
 
-                // Add the smooth drifting motion to the painting
-                transform.position += new Vector3(offsetX, offsetY, offsetZ);
+                if (progress >= 1.0f)
+                {
+                    transform.localScale = Vector3.zero;
+                    transform.position = originalPosition;
+                }
+                else
+                {
+                    transform.localScale = Vector3.Lerp(originalScale, Vector3.zero, progress);
+
+                    // High-frequency tremor glitch
+                    float shakeX = Mathf.Sin(Time.time * glitchShakeSpeed) * glitchIntensity * (1f - progress);
+                    float shakeY = Mathf.Cos(Time.time * glitchShakeSpeed * 1.5f) * glitchIntensity * (1f - progress);
+                    float shakeZ = Mathf.Sin(Time.time * glitchShakeSpeed * 2f) * glitchIntensity * (1f - progress);
+
+                    transform.position = originalPosition + new Vector3(shakeX, shakeY, shakeZ);
+                }
             }
         }
     }
 
-    private Vector3 GetChosenWorldVector()
+    /// <summary>
+    /// Processes whether the item falls within the corner of the player's eye or under a direct gaze.
+    /// </summary>
+    public void UpdatePeripheralGaze(Transform cameraTransform, float dotThreshold, bool isDirectRaycastHit)
     {
-        switch (roomDirection)
+        // Vector heading directly from eye to object center
+        Vector3 dirToPainting = (transform.position - cameraTransform.position).normalized;
+        float lookAlignment = Vector3.Dot(cameraTransform.forward, dirToPainting);
+
+        // --- CONDITION A: Looking right at it (or center vision alignment is met) ---
+        if (isDirectRaycastHit || lookAlignment > dotThreshold)
         {
-            case PushDirection.WorldForward: return Vector3.forward;
-            case PushDirection.WorldBackward: return Vector3.back;
-            case PushDirection.WorldLeft: return Vector3.left;
-            case PushDirection.WorldRight: return Vector3.right;
-            default: return Vector3.forward;
+            // Shatter the illusion instantly! Reset positions immediately
+            ResetIllusion();
         }
+        // --- CONDITION B: It is sitting in the peripheral view (slightly turned away) ---
+        else if (lookAlignment > 0.35f) // Adjust this lower if you want it to trigger even further to the side
+        {
+            switch (activeEffect)
+            {
+                case EffectType.SinkThroughWall:
+                    // Uses local forward vector to sink straight BACKWARDS through its wall mesh
+                    currentTargetPosition = originalPosition - (transform.forward * sinkDistance);
+                    break;
+
+                case EffectType.DisappearGlitch:
+                    isGlitchedOut = true;
+                    break;
+            }
+        }
+        // --- CONDITION C: Completely behind the player's head ---
+        else
+        {
+            ResetIllusion();
+        }
+    }
+
+    private void ResetIllusion()
+    {
+        isGlitchedOut = false;
+        currentVanishTimer = 0f;
+        currentTargetPosition = originalPosition;
+
+        // Snap parameters back instantly like it was never gone
+        transform.position = originalPosition;
+        transform.localScale = originalScale;
     }
 
     public void OnStare(float deltaTime)
     {
-        isBeingStaredAt = true;
-        Vector3 pushVector = GetChosenWorldVector();
-
-        // If a moving hallucination already timed out during this gaze session, stop pushing it
-        if (hallucinationEnded && activeEffect != EffectType.CreepyDistortion) return;
-
-        stareTime += deltaTime;
-
-        switch (activeEffect)
+        // Standard code path untouched for CreepyDistortion timers
+        if (activeEffect == EffectType.CreepyDistortion)
         {
-            case EffectType.SinkIntoWall:
-                currentTargetPosition = originalPosition - (pushVector * sinkDistance);
-                break;
-
-            case EffectType.HoverInAir:
-                currentTargetPosition = originalPosition + (pushVector * detachForwardDistance);
-                break;
-
-            case EffectType.CreepyDistortion:
-                if (stareTime >= stareThreshold && !isCreepy)
-                {
-                    isCreepy = true;
-                    if (creepyMaterial != null && renderer != null)
-                        renderer.material = creepyMaterial;
-
-                    if (AudioManager.Instance != null)
-                        AudioManager.Instance.StartCreepyDistortion();
-
-                    Debug.Log(gameObject.name + " → CREEPY + DISTORTION");
-                }
-                break;
+            stareTime += deltaTime;
+            if (stareTime >= stareThreshold && !isCreepy)
+            {
+                isCreepy = true;
+                if (creepyMaterial != null && renderer != null) renderer.material = creepyMaterial;
+                if (AudioManager.Instance != null) AudioManager.Instance.StartCreepyDistortion();
+            }
         }
     }
 
     public void OnLookAway()
     {
         stareTime = 0f;
-        currentHallucinationTimer = 0f;
-        isBeingStaredAt = false;
-        hallucinationEnded = false;
-
-        // Reset positions smoothly back onto the wall mount
-        if (activeEffect == EffectType.SinkIntoWall || activeEffect == EffectType.HoverInAir)
-        {
-            currentTargetPosition = originalPosition;
-        }
-
-        // Reset visual/audio for distortion effect
         if (activeEffect == EffectType.CreepyDistortion && isCreepy)
         {
             isCreepy = false;
-            if (normalMaterial != null && renderer != null)
-                renderer.material = normalMaterial;
-
-            if (AudioManager.Instance != null)
-                AudioManager.Instance.ReturnNormalMusic();
-
-            Debug.Log(gameObject.name + " → Normal");
+            if (normalMaterial != null && renderer != null) renderer.material = normalMaterial;
+            if (AudioManager.Instance != null) AudioManager.Instance.ReturnNormalMusic();
         }
     }
 }
