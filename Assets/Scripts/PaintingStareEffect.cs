@@ -15,8 +15,8 @@ public class PaintingStareEffect : MonoBehaviour
     [Tooltip("Which direction points AWAY from the wall into the walking space?")]
     public PushDirection roomDirection = PushDirection.WorldForward;
 
-    [Header("Hallucination Timer (New)")]
-    [Tooltip("How many seconds does the hallucination last before reality snaps it back?")]
+    [Header("Hallucination Settings (New)")]
+    [Tooltip("How many seconds the physical movement lasts before it snaps back automatically.")]
     public float hallucinationDuration = 2.5f;
     private float currentHallucinationTimer = 0f;
     private bool hallucinationEnded = false;
@@ -29,13 +29,17 @@ public class PaintingStareEffect : MonoBehaviour
     private bool isCreepy = false;
 
     [Header("2. Sinking Wall Settings")]
+    [Tooltip("Distance it sinks back into the wall frame.")]
     public float sinkDistance = 1.5f; 
     public float sinkSpeed = 3.0f;
 
     [Header("3. Weightless Air Hover Settings")]
+    [Tooltip("How many meters the painting pops out into the room space.")]
     public float detachForwardDistance = 0.6f; 
     public float transitionSpeed = 2.0f;
+    [Tooltip("How wide/far the random floating movement area is.")]
     public float floatRandomRange = 0.15f; 
+    [Tooltip("How slow and smooth the random drift is.")]
     public float floatDriftSpeed = 0.8f;
 
     private Vector3 originalPosition;
@@ -52,9 +56,11 @@ public class PaintingStareEffect : MonoBehaviour
         if (normalMaterial != null && renderer != null)
             renderer.material = normalMaterial;
 
+        // Save the home position
         originalPosition = transform.position;
         currentTargetPosition = originalPosition;
 
+        // Generate unique random seeds for organic drifting variance
         noiseSeedX = Random.Range(0f, 100f);
         noiseSeedY = Random.Range(0f, 100f);
         noiseSeedZ = Random.Range(0f, 100f);
@@ -62,13 +68,13 @@ public class PaintingStareEffect : MonoBehaviour
 
     private void Update()
     {
-        // --- TIMER LOGIC FOR HALLUCINATION ---
-        if (isBeingStaredAt && !hallucinationEnded)
+        // --- TIMER FOR MOVING HALLUCINATIONS ---
+        // Exclude CreepyDistortion so it is completely unaffected by the timer
+        if (isBeingStaredAt && !hallucinationEnded && activeEffect != EffectType.CreepyDistortion)
         {
             currentHallucinationTimer += Time.deltaTime;
             if (currentHallucinationTimer >= hallucinationDuration)
             {
-                // Hallucination over! Force the target back to the wall base
                 currentTargetPosition = originalPosition;
                 hallucinationEnded = true;
             }
@@ -83,17 +89,20 @@ public class PaintingStareEffect : MonoBehaviour
         // --- TYPE 3: WEIGHTLESS FLOAT/DRIFT ---
         else if (activeEffect == EffectType.HoverInAir)
         {
+            // 1. Linearly move between the wall position and the floating point in space
             transform.position = Vector3.Lerp(transform.position, currentTargetPosition, Time.deltaTime * transitionSpeed);
 
-            // Only apply random drift if the hallucination is active and currently away from the wall
+            // 2. If it has detached, layer the organic random 3D drift on top (only if timer hasn't expired)
             if (currentTargetPosition != originalPosition && !hallucinationEnded)
             {
                 float timeFactor = Time.time * floatDriftSpeed;
                 
+                // Calculate smooth random offsets using Perlin Noise
                 float offsetX = (Mathf.PerlinNoise(noiseSeedX + timeFactor, 0f) - 0.5f) * floatRandomRange;
                 float offsetY = (Mathf.PerlinNoise(0f, noiseSeedY + timeFactor) - 0.5f) * floatRandomRange;
                 float offsetZ = (Mathf.PerlinNoise(noiseSeedZ + timeFactor, noiseSeedZ) - 0.5f) * floatRandomRange;
 
+                // Add the smooth drifting motion to the painting
                 transform.position += new Vector3(offsetX, offsetY, offsetZ);
             }
         }
@@ -116,8 +125,8 @@ public class PaintingStareEffect : MonoBehaviour
         isBeingStaredAt = true;
         Vector3 pushVector = GetChosenWorldVector();
 
-        // If the hallucination already timed out on this stare session, ignore further push logic
-        if (hallucinationEnded) return;
+        // If a moving hallucination already timed out during this gaze session, stop pushing it
+        if (hallucinationEnded && activeEffect != EffectType.CreepyDistortion) return;
 
         stareTime += deltaTime;
 
@@ -140,6 +149,8 @@ public class PaintingStareEffect : MonoBehaviour
 
                     if (AudioManager.Instance != null)
                         AudioManager.Instance.StartCreepyDistortion();
+
+                    Debug.Log(gameObject.name + " → CREEPY + DISTORTION");
                 }
                 break;
         }
@@ -147,17 +158,18 @@ public class PaintingStareEffect : MonoBehaviour
 
     public void OnLookAway()
     {
-        // Reset everything cleanly so it's ready to flash again on the next glance
         stareTime = 0f;
         currentHallucinationTimer = 0f;
         isBeingStaredAt = false;
-        hallucinationEnded = false; 
+        hallucinationEnded = false;
 
+        // Reset positions smoothly back onto the wall mount
         if (activeEffect == EffectType.SinkIntoWall || activeEffect == EffectType.HoverInAir)
         {
             currentTargetPosition = originalPosition;
         }
 
+        // Reset visual/audio for distortion effect
         if (activeEffect == EffectType.CreepyDistortion && isCreepy)
         {
             isCreepy = false;
@@ -166,6 +178,8 @@ public class PaintingStareEffect : MonoBehaviour
 
             if (AudioManager.Instance != null)
                 AudioManager.Instance.ReturnNormalMusic();
+
+            Debug.Log(gameObject.name + " → Normal");
         }
     }
 }

@@ -29,10 +29,10 @@ public class CreepyZoneManager : MonoBehaviour
                 AudioManager.Instance.StartMusic();
 
             // Find every chair in the scene with the script and tell them the countdown started
-            ChairCreepyRotation[] chairs = FindObjectsByType<ChairCreepyRotation>(FindObjectsSortMode.None);
-            foreach (ChairCreepyRotation chair in chairs)
+            ChairStareGlitched[] chairs = FindObjectsByType<ChairStareGlitched>(FindObjectsSortMode.None);
+            foreach (ChairStareGlitched chair in chairs)
             {
-                chair.PlayerEnteredCreepyZone();
+                chair.OnStare();
             }
         }
         
@@ -42,10 +42,10 @@ public class CreepyZoneManager : MonoBehaviour
             Debug.Log("❌ PLAYER LEFT CREEPY ZONE!");
             
             // Tell all the chairs to reset their timers if they haven't triggered yet
-            ChairCreepyRotation[] chairs = FindObjectsByType<ChairCreepyRotation>(FindObjectsSortMode.None);
-            foreach (ChairCreepyRotation chair in chairs)
+            ChairStareGlitched[] chairs = FindObjectsByType<ChairStareGlitched>(FindObjectsSortMode.None);
+            foreach (ChairStareGlitched chair in chairs)
             {
-                chair.PlayerLeftCreepyZone();
+                chair.OnLookAway();
             }
         }
     }
