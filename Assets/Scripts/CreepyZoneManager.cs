@@ -8,6 +8,7 @@ public class CreepyZoneManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        Debug.Log("✅ CreepyZoneManager Ready");
     }
 
     private void Update()
@@ -15,6 +16,16 @@ public class CreepyZoneManager : MonoBehaviour
         if (Camera.main == null) return;
 
         float dist = Vector3.Distance(transform.position, Camera.main.transform.position);
-        IsInsideCreepyZone = (dist < 18f);
+        Debug.Log($"📍 Distance to CreepyZone: {dist:F1} m");
+
+        bool wasInside = IsInsideCreepyZone;
+        IsInsideCreepyZone = (dist < 30f);   // Very big range
+
+        if (IsInsideCreepyZone && !wasInside)
+        {
+            Debug.Log("✅✅✅ PLAYER ENTERED CREEPY ZONE!");
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.StartMusic();
+        }
     }
 }

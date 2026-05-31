@@ -1,16 +1,17 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
-    [Header("Music")]
     public AudioSource musicSource;
-
-    [Header("Mixer Snapshots")]
     public AudioMixerSnapshot normalSnapshot;
     public AudioMixerSnapshot creepySnapshot;
+
+    // Frame-level guard to prevent simultaneous engine execution
+    private bool _isPlayRequestedThisFrame = false;
 
     private void Awake()
     {
@@ -19,20 +20,43 @@ public class AudioManager : MonoBehaviour
 
     public void StartMusic()
     {
-        if (musicSource != null && !musicSource.isPlaying)
+        if (musicSource == null) return;
+
+        // 1. Standard check if it's already running from a previous frame
+        if (musicSource.isPlaying)
         {
-            musicSource.Play();
-            Debug.Log("🎵 Music Started");
+            return; 
         }
+
+        // 2. Hardware race-condition check for simultaneous same-frame calls
+        if (_isPlayRequestedThisFrame)
+        {
+            return;
+        }
+
+        // Lock down instantly, play, and schedule the lock release for next frame
+        _isPlayRequestedThisFrame = true;
+        musicSource.Play();
+        Debug.Log("🎵 Music started fresh from the beginning.");
+
+        StartCoroutine(ResetFrameLock());
     }
 
-    public void UpdateDistortion(float meltAmount)
+    private IEnumerator ResetFrameLock()
     {
-        if (normalSnapshot == null || creepySnapshot == null) return;
+        yield return null; // Waits exactly 1 frame
+        _isPlayRequestedThisFrame = false;
+    }
 
-        if (meltAmount > 0.15f)
-            creepySnapshot.TransitionTo(0.8f);
-        else
-            normalSnapshot.TransitionTo(1.2f);
+    public void StartCreepyDistortion()
+    {
+        Debug.Log("🎵 → CREEPY DISTORTION");
+        creepySnapshot?.TransitionTo(0.5f);   // faster + stronger
+    }
+
+    public void ReturnNormalMusic()
+    {
+        Debug.Log("🎵 → NORMAL");
+        normalSnapshot?.TransitionTo(1.0f);
     }
 }
