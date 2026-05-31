@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\fancy_picture_frame_01_4k.fbx\textures\fancy_picture_frame_01_diff_4k.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\fancy_picture_frame_01_4k.fbx\textures\fancy_picture_frame_01_rough_4k.jpg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\football\textures\Material_baseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\football\textures\Material_metallicRoughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\glass_box_small\textures\Glass.002_baseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\glass_box_small\textures\Glass.002_metallicRoughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\glass_box_small\textures\Glass.002_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\glass_box_small\textures\wood_baseColor.jpeg

@@ -1,0 +1,7 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Mouse\MouseR_d.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\SpaceZeta_Spotlight\Assets\Materials\Spotlight_basecolor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\SpaceZeta_Spotlight\Assets\Materials\Spotlight_emission.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\SpaceZeta_Spotlight\Assets\Materials\Spotlight_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\SpaceZeta_Spotlight\Assets\Materials\Spotlight_roughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\SpaceZeta_Spotlight\Scenes\Materials\_roughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\TextMesh Pro\Sprites\EmojiOne.png

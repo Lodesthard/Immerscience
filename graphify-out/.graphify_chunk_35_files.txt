@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\textures\Sepals2_basecolor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\textures\SmallPlants1_basecolor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\textures\SmallPlants2_basecolor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wrapped-flower-bouquet\textures\SmallPlants3_basecolor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Classic Acoustic Guitar\Textures\guitar_01_AlbedoTransparency.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Classic Acoustic Guitar\Textures\guitar_01_AO.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Classic Acoustic Guitar\Textures\guitar_01_MetallicSmoothness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Classic Acoustic Guitar\Textures\guitar_01_Normal.png

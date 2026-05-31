@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\more_details_mat_metallicRoughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\more_details_mat_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\speakers_details_mat_baseColor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\speakers_details_mat_metallicRoughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\speakers_details_mat_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\speaker_body_mat_baseColor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\speaker_body_mat_metallicRoughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\lumen_resonance__audio_system\textures\speaker_body_mat_normal.png

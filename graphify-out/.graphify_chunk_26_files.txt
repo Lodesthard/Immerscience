@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wilson-football\source\football\lower.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wilson-football\source\football\lowerb.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wilson-football\source\football\upper.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wilson-football\source\football\upperb.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wilson-football\textures\internal_ground_ao_texture.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wilson-football\textures\lower.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wilson-football\textures\lowerb.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\wilson-football\textures\lowers.png

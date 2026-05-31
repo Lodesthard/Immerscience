@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\textures\Material_baseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\textures\Material_metallicRoughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\the_showcase\textures\ShowcaseMaterial_baseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\the_showcase\textures\ShowcaseMaterial_metallicRoughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\toy_xylophone\textures\Material_0_baseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\velocipede_artisanal_dimitation_michaux\textures\material_0_baseColor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\velocipede_artisanal_dimitation_michaux\textures\material_0_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\vitrine\textures\255255255_baseColor.jpeg

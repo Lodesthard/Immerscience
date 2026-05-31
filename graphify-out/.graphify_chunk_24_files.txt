@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\table\textures\DefaultMaterial_Base_Color.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\table\textures\DefaultMaterial_Metallic.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\table\textures\DefaultMaterial_Roughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\table\textures\table_lp_DefaultMaterial_Normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\textures\FABRIC_2_FRONT_5193_baseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\textures\FABRIC_2_FRONT_5193_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\textures\material_0_baseColor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\textures\material_0_normal.png

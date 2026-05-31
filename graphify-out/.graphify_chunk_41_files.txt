@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\General\KeyboardIcon.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\General\Locked.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\General\Look.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\General\OpenWindow.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\General\Unlocked.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Hands\hand.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Hands\Hand_Default.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\Samples\XR Interaction Toolkit\2.5.4\XR Device Simulator\UI\Hands\Hand_Fist.png

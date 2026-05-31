@@ -1,0 +1,8 @@
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\museum_showcase_-_die_vitrine\textures\VitriMat_baseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\museum_showcase_-_die_vitrine\textures\VitriMat_metallicRoughness.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\new_balance_kids\textures\material_0_baseColor.jpeg
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\octa_asa_6\textures\FABRIC_2_FRONT_5193_baseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\octa_asa_6\textures\FABRIC_2_FRONT_5193_normal.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls\textures\BallRack_MTL_BaseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls\textures\ChalkCube_MTL_BaseColor.png
+C:\Users\bidbi\Documents\Unity\Immerscience\Assets\assets_blend\pool-table-billiard-table-with-cues-and-balls\textures\ChalkCube_MTL_Normal.png
