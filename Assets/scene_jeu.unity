@@ -2180,8 +2180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: b7f50e9c252996d42ac83887b74814da, type: 2}
-  renderer: {fileID: 0}
-  activeEffect: 0
+  renderer: {fileID: 255117533}
+  activeEffect: 2
   roomDirection: 0
   hallucinationDuration: 2.5
   creepyMaterial: {fileID: 2100000, guid: 2a5d5f77d5c7fd643bc888f77f8fa14e, type: 2}
@@ -7899,7 +7899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: a4c40de7089440d4ba066afa97394bac, type: 2}
-  renderer: {fileID: 0}
+  renderer: {fileID: 889922311}
   activeEffect: 0
   roomDirection: 0
   hallucinationDuration: 2.5
@@ -8803,31 +8803,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.66
+      value: 0.99
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8208283
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.53713495
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.106355555
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.16252835
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -66.4
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 2184381367495636711, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 22.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2510451383451585915, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9146,7 +9146,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5425331572631767777, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1739697666}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3592452621839847065, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2083309775}
   m_SourcePrefab: {fileID: 100100000, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
 --- !u!4 &1069305887 stripped
 Transform:
@@ -12154,8 +12157,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: b84d86778f9e62746890958165231cb6, type: 2}
-  renderer: {fileID: 0}
-  activeEffect: 0
+  renderer: {fileID: 1383577646}
+  activeEffect: 1
   roomDirection: 0
   hallucinationDuration: 2.5
   creepyMaterial: {fileID: 2100000, guid: 82b51dc7a6e51cd4e9a256ac8a9e541b, type: 2}
@@ -14735,8 +14738,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: 2d39390447c3c6c4888149972d73e1d9, type: 2}
-  renderer: {fileID: 0}
-  activeEffect: 0
+  renderer: {fileID: 1654175778}
+  activeEffect: 1
   roomDirection: 0
   hallucinationDuration: 2.5
   creepyMaterial: {fileID: 2100000, guid: 379dfeb10516424459671e0ad19cdd8c, type: 2}
@@ -15074,7 +15077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: 33e0acfa40c167545840f32917f91ced, type: 2}
-  renderer: {fileID: 0}
+  renderer: {fileID: 1674298535}
   activeEffect: 0
   roomDirection: 0
   hallucinationDuration: 2.5
@@ -17592,8 +17595,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: d621b06b75b93ce48b1e8463d44f90c8, type: 2}
-  renderer: {fileID: 0}
-  activeEffect: 0
+  renderer: {fileID: 1885712251}
+  activeEffect: 2
   roomDirection: 0
   hallucinationDuration: 2.5
   creepyMaterial: {fileID: 2100000, guid: 6fd06d2c8dcab79429901b18ecdb1a16, type: 2}
@@ -18671,8 +18674,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: eb7d775554b55bb4994cb74c4236a9ea, type: 2}
-  renderer: {fileID: 0}
-  activeEffect: 0
+  renderer: {fileID: 1963502141}
+  activeEffect: 2
   roomDirection: 0
   hallucinationDuration: 2.5
   creepyMaterial: {fileID: 2100000, guid: dc3de555f4e19604195b39c7e74e9d65, type: 2}
@@ -19343,6 +19346,27 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1427151679}
   m_SourcePrefab: {fileID: -5645937942226959685, guid: 1c030817484b30d428a5dd4314ff92c0, type: 3}
+--- !u!1 &2083309773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3592452621839847065, guid: 6d08f2b094d2f6242b992f0acbc41173, type: 3}
+  m_PrefabInstance: {fileID: 1069305886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2083309775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083309773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e5cab9738468c48bbe17ee466206cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoneDelayThreshold: 5
+  upwardTiltAngle: -30
+  sidewardTwistAngle: 25
+  rotationSpeed: 4
 --- !u!1001 &2086550390
 PrefabInstance:
   m_ObjectHideFlags: 0
