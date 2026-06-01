@@ -853,7 +853,7 @@
                 {
                     "name": "",
                     "id": "b34c79c1-ab5e-4851-87ac-abc43705eae0",
-                    "path": "<XRController>{LeftHand}/{TriggerButton}",
+                    "path": "<XRController>{LeftHand}/{GripButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
@@ -875,7 +875,7 @@
                 {
                     "name": "",
                     "id": "71d94579-1bf4-4034-ab9e-e7166842128f",
-                    "path": "<XRController>{LeftHand}/{Trigger}",
+                    "path": "<XRController>{LeftHand}/{Grip}",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
@@ -1667,7 +1667,7 @@
                 {
                     "name": "",
                     "id": "92bb5b8f-bf48-4dab-af05-50a865773895",
-                    "path": "<XRController>{RightHand}/{TriggerButton}",
+                    "path": "<XRController>{RightHand}/{GripButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
@@ -1689,7 +1689,7 @@
                 {
                     "name": "",
                     "id": "5b4ef08d-9ddd-4f0a-8539-d1114d14d143",
-                    "path": "<XRController>{RightHand}/{Trigger}",
+                    "path": "<XRController>{RightHand}/{Grip}",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
