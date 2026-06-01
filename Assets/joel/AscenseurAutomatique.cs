@@ -24,6 +24,11 @@ public class AscenseurAutomatique : MonoBehaviour
     [Tooltip("Ajoute 180° au yaw du rig après téléportation (ascenseurs face à face).")]
     public bool inverserOrientation = true;
 
+    [Tooltip("Délai (s) après une téléportation pendant lequel AUCUN ascenseur ne " +
+             "peut redémarrer. Anti-boucle : le point d'arrivée peut tomber dans le " +
+             "rayon d'un autre ascenseur (ou du même).")]
+    public float delaiAntiBoucle = 2f;
+
     private Vector3 posInitialeGauche;
     private Vector3 posInitialeDroite;
     private bool voyageEnCours = false;
@@ -32,6 +37,16 @@ public class AscenseurAutomatique : MonoBehaviour
     // 0 = fermé, 1 = ouvert. Progression linéaire dans le temps : l'ouverture
     // est l'exact inverse temporel de la fermeture (même vitesse, easing symétrique).
     private float ouvertureProgress = 0f;
+
+    // Anti-boucle : le joueur doit être clairement SORTI de la zone
+    // (distance > distanceOuverture) pour réarmer un départ. Empêche un
+    // re-déclenchement immédiat quand le joueur est déposé dans/à côté de
+    // l'ascenseur d'arrivée.
+    private bool pretAuDepart = false;
+
+    // Verrou GLOBAL partagé par tous les ascenseurs : juste après une
+    // téléportation, plus aucun voyage ne peut démarrer pendant delaiAntiBoucle.
+    private static float prochainDepartAutorise = 0f;
 
     void Start()
     {
@@ -51,7 +66,16 @@ public class AscenseurAutomatique : MonoBehaviour
 
         float distance = Vector3.Distance(transform.position, joueur.position);
 
-        if (distance < distanceDepartVoyage && !voyageEnCours)
+        // --- Réarmement anti-boucle ---
+        // Pendant la fenêtre qui suit une téléportation, on DÉSARME en continu :
+        // un ascenseur dans lequel le joueur vient d'être déposé ne peut pas
+        // repartir tant que le joueur n'est pas ressorti.
+        if (Time.time < prochainDepartAutorise)
+            pretAuDepart = false;
+        else if (distance > distanceOuverture)
+            pretAuDepart = true;
+
+        if (pretAuDepart && distance < distanceDepartVoyage)
         {
             StartCoroutine(SequenceVoyage());
             return;
@@ -75,13 +99,14 @@ public class AscenseurAutomatique : MonoBehaviour
         // => la courbe d'ouverture est l'exact miroir temporel de la fermeture.
         float k = Mathf.SmoothStep(0f, 1f, ouvertureProgress);
 
-        porteGauche.localPosition = posInitialeGauche + translationGauche * k;
-        porteDroite.localPosition = posInitialeDroite + translationDroite * k;
+        if (porteGauche) porteGauche.localPosition = posInitialeGauche + translationGauche * k;
+        if (porteDroite) porteDroite.localPosition = posInitialeDroite + translationDroite * k;
     }
 
     IEnumerator SequenceVoyage()
     {
         voyageEnCours = true;
+        pretAuDepart = false; // consommé : il faudra ressortir pour relancer
         estOuvert = false;
 
         yield return new WaitForSeconds(2.5f);
@@ -108,6 +133,11 @@ public class AscenseurAutomatique : MonoBehaviour
                 joueur.root.rotation = pointArrivee.rotation;
                 Debug.LogWarning("XR Origin non trouvé, déplacement du Root.");
             }
+
+            // Bloque TOUS les ascenseurs un court instant : le point d'arrivée
+            // peut être proche d'un autre ascenseur (ou de celui-ci) -> évite la
+            // téléportation en boucle.
+            prochainDepartAutorise = Time.time + delaiAntiBoucle;
         }
 
         // Attendre que le joueur soit bien arrivé (position stabilisée)
@@ -115,5 +145,7 @@ public class AscenseurAutomatique : MonoBehaviour
 
         estOuvert = true;
         voyageEnCours = false;
+        // pretAuDepart reste false : le joueur doit sortir de la zone
+        // (distance > distanceOuverture) avant de pouvoir relancer cet ascenseur.
     }
 }
