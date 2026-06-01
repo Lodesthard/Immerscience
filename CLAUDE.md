@@ -13,6 +13,8 @@ VR museum/interactive-space experience. Unity + XR Interaction Toolkit 2.5.4. Ta
 - `com.unity.xr.arfoundation` 5.0.7
 - `com.ivanmurzak.unity.mcp` — AI Game Developer MCP server (scene manipulation via tools)
 
+Unity Editor **2022.3.9f1** (`ProjectSettings/ProjectVersion.txt`). Render pipeline = **Built-in** (pas URP) → matériaux via shader `Standard`.
+
 ## Scene Structure
 
 Single scene `scene_jeu`. Key roots:
@@ -74,6 +76,8 @@ Scripts that need the player head use `Camera.main.transform` as fallback, with 
 `MenuOpener` — Input action toggles canvas, positions it in front of head.  
 `VRMenuSettings` / `SliderStep` / `LaserToggle` — VR settings panel helpers.
 
+Sliders VR : clic piloté par l'action **"UI Press"** de `XRI Default Input Actions` (sur `ActionBasedController` du Controller), rebindée sur le **grip** (`{GripButton}`/`{Grip}`). Requiert `TrackedDeviceGraphicRaycaster` sur le canvas `Menu` + `XRUIInputModule` sur l'EventSystem (déjà en place). `SliderApplyOnRelease` (sur un slider) applique l'effet seulement au relâchement (IPointerUp/IEndDrag), pas pendant le drag.
+
 ## Inspector Wiring Rules
 
 Every script that references the player expects **Main Camera** dragged into its transform field. XR Origin rig path: `XR Interaction Setup > XR Origin (XR Rig) > Camera Offset > Main Camera`.
@@ -90,6 +94,18 @@ Every script that references the player expects **Main Camera** dragged into its
 - MCP `gameobject-component-modify` cannot assign `Transform` refs via `jsonPatch` or `pathPatches` — use `script-execute` + `EditorUtility.SetDirty(go)` instead.
 - `com.ivanmurzak.unity.mcp.probuilder` CS0246 errors are a package version mismatch — bénin, n'affecte pas les scripts du projet.
 - VR hand mesh offset calibration: add debug cube (`CreatePrimitive(PrimitiveType.Cube)`, scale 0.03) as child of `Left Controller`/`Right Controller` at `localPosition = Vector3.zero` to see exact controller pivot in Play Mode. Remove after calibration.
+- `unity_execute_code` : code wrappé en corps de méthode → **pas de `using`** ; qualifier complet (`UnityEngine.Object`, `UnityEngine.Random`, `UnityEditor.AssetDatabase`). `Object`/`Random` seuls = ambigus (CS0104).
+- Plusieurs Editors peuvent tourner : ce projet = **port 7891** (`Unity/2/Immerscience`). `unity_select_instance` puis passer `port:7891` à chaque appel `unity_*`.
+- Portes GLTF de l'ascenseur salle 2 : hiérarchie fortement scalée/tournée (`localPosition` 1 unité ≈ ~200 unités monde, axes pivotés). Ne pas régler `localPosition` à l'aveugle — placer les portes en pose **fermée** dans l'éditeur avant Play (posInitiale = fermé).
+
+## Merge conflicts sur scene_jeu.unity
+
+Résoudre avec UnityYAMLMerge (jamais à la main) :
+`& "C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Tools\UnityYAMLMerge.exe" merge -p BASE THEIRS OURS MERGED`
+- Extraire les 3 stages : `git cat-file blob <hash>` (depuis `git ls-files -u -- Assets/scene_jeu.unity` : stage 1=base, 2=ours, 3=theirs).
+- Ordre des args = `base theirs ours merged`. Vérifier 0 `<<<<<<<` dans merged, puis `cp` → `git add`.
+- En rebase, répéter à chaque étape (`git rebase --continue` avec `GIT_EDITOR=true`).
+- Après un git op qui modifie la scène sur disque → **recharger la scène dans Unity** (sinon l'éditeur écrase avec sa version mémoire).
 
 ## graphify
 
