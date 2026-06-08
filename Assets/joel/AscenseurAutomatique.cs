@@ -29,6 +29,27 @@ public class AscenseurAutomatique : MonoBehaviour
              "rayon d'un autre ascenseur (ou du même).")]
     public float delaiAntiBoucle = 2f;
 
+    [Header("Délai minimum dans la salle")]
+    [Tooltip("Temps minimum (s) que le joueur doit passer HORS de l'ascenseur (= dans " +
+             "la salle) avant de pouvoir relancer le voyage. Le chrono démarre quand le " +
+             "joueur quitte la zone de l'ascenseur après son arrivée. 0 = désactivé.")]
+    public float tempsMinimumDansSalle = 0f;
+
+    [Header("Ouverture des portes de l'ascenseur d'arrivée")]
+    [Tooltip("Ascenseur situé au point d'arrivée. À la fin de la téléportation, ses " +
+             "portes s'ouvrent automatiquement (le joueur vient d'y être déposé). " +
+             "Laisser vide si aucun.")]
+    public AscenseurAutomatique ascenseurDestination;
+
+    [Tooltip("Durée (s) pendant laquelle les portes restent forcées ouvertes après une " +
+             "ouverture déclenchée par la téléportation, le temps que le joueur sorte. " +
+             "Empêche la détection de proximité de les refermer aussitôt.")]
+    public float dureeForcerOuverture = 6f;
+
+    // Tant que Time.time < cette valeur, estOuvert est forcé à true (ouverture
+    // déclenchée par l'arrivée d'une téléportation, indépendante de la proximité).
+    private float forcerOuvertureJusqu = 0f;
+
     private Vector3 posInitialeGauche;
     private Vector3 posInitialeDroite;
     private bool voyageEnCours = false;
@@ -43,6 +64,10 @@ public class AscenseurAutomatique : MonoBehaviour
     // re-déclenchement immédiat quand le joueur est déposé dans/à côté de
     // l'ascenseur d'arrivée.
     private bool pretAuDepart = false;
+
+    // Moment où le joueur est sorti de la zone de l'ascenseur (= est entré dans
+    // la salle). Sert au gate `tempsMinimumDansSalle`. -1 = pas encore sorti.
+    private float tempsSortieZone = -1f;
 
     // Verrou GLOBAL partagé par tous les ascenseurs : juste après une
     // téléportation, plus aucun voyage ne peut démarrer pendant delaiAntiBoucle.
@@ -73,9 +98,20 @@ public class AscenseurAutomatique : MonoBehaviour
         if (Time.time < prochainDepartAutorise)
             pretAuDepart = false;
         else if (distance > distanceOuverture)
+        {
+            // Premier instant où le joueur quitte la zone après son arrivée :
+            // démarre le chrono de présence dans la salle.
+            if (!pretAuDepart && tempsSortieZone < 0f)
+                tempsSortieZone = Time.time;
             pretAuDepart = true;
+        }
 
-        if (pretAuDepart && distance < distanceDepartVoyage)
+        // Gate : le joueur doit avoir passé `tempsMinimumDansSalle` secondes hors
+        // de l'ascenseur (dans la salle) avant de pouvoir relancer un voyage.
+        bool delaiSalleOk = tempsMinimumDansSalle <= 0f
+            || (tempsSortieZone >= 0f && Time.time - tempsSortieZone >= tempsMinimumDansSalle);
+
+        if (pretAuDepart && delaiSalleOk && distance < distanceDepartVoyage)
         {
             StartCoroutine(SequenceVoyage());
             return;
@@ -85,7 +121,20 @@ public class AscenseurAutomatique : MonoBehaviour
             estOuvert = true;
         else if (estOuvert && distance > distanceOuverture + 1.5f)
             estOuvert = false;
+
+        // Ouverture forcée suite à une téléportation : prioritaire sur la proximité.
+        if (Time.time < forcerOuvertureJusqu)
+            estOuvert = true;
+
         ActualiserMouvementPortes();
+    }
+
+    // Ouvre les portes immédiatement (et les maintient ouvertes un court instant).
+    // Appelé par l'ascenseur de départ juste après avoir téléporté le joueur ici.
+    public void DemanderOuverture()
+    {
+        forcerOuvertureJusqu = Time.time + dureeForcerOuverture;
+        estOuvert = true;
     }
 
     void ActualiserMouvementPortes()
@@ -107,6 +156,7 @@ public class AscenseurAutomatique : MonoBehaviour
     {
         voyageEnCours = true;
         pretAuDepart = false; // consommé : il faudra ressortir pour relancer
+        tempsSortieZone = -1f; // ré-arme le chrono de présence dans la salle
         estOuvert = false;
 
         yield return new WaitForSeconds(2.5f);
@@ -138,6 +188,10 @@ public class AscenseurAutomatique : MonoBehaviour
             // peut être proche d'un autre ascenseur (ou de celui-ci) -> évite la
             // téléportation en boucle.
             prochainDepartAutorise = Time.time + delaiAntiBoucle;
+
+            // Ouvre les portes de l'ascenseur où le joueur vient d'être déposé.
+            if (ascenseurDestination != null)
+                ascenseurDestination.DemanderOuverture();
         }
 
         // Attendre que le joueur soit bien arrivé (position stabilisée)
