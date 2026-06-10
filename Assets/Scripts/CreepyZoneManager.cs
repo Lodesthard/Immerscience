@@ -40,7 +40,12 @@ public class CreepyZoneManager : MonoBehaviour
         else if (!IsInsideCreepyZone && wasInside)
         {
             Debug.Log("❌ PLAYER LEFT CREEPY ZONE!");
-            
+
+            // Coupe la musique de la creepy zone en quittant la zone (ex. quand
+            // l'ascenseur téléporte le joueur dans la salle 3, à ~197 m d'ici).
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.StopMusic();
+
             // Tell all the chairs to reset their timers if they haven't triggered yet
             ChairStareGlitched[] chairs = FindObjectsByType<ChairStareGlitched>(FindObjectsSortMode.None);
             foreach (ChairStareGlitched chair in chairs)

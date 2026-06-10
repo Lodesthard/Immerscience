@@ -21,6 +21,11 @@ public class AscenseurAutomatique : MonoBehaviour
     public Vector3 translationGauche = new Vector3(0, 0, -1.5f);
     public Vector3 translationDroite = new Vector3(0, 0, 1.5f);
 
+    [Tooltip("Temps (s) pendant lequel les portes RESTENT ouvertes après le " +
+             "déclenchement du voyage, pour laisser le joueur entrer dans la cabine " +
+             "avant que les portes ne se ferment.")]
+    public float tempsEmbarquement = 4f;
+
     [Tooltip("Ajoute 180° au yaw du rig après téléportation (ascenseurs face à face).")]
     public bool inverserOrientation = true;
 
@@ -135,6 +140,14 @@ public class AscenseurAutomatique : MonoBehaviour
     {
         forcerOuvertureJusqu = Time.time + dureeForcerOuverture;
         estOuvert = true;
+
+        // Le joueur vient d'être DÉPOSÉ ici (arrivée d'un voyage). Il faut qu'il
+        // ressorte réellement dans la salle avant que CET ascenseur puisse repartir.
+        // Sinon, comme le joueur était loin pendant tout le trajet précédent,
+        // pretAuDepart/tempsSortieZone sont déjà armés -> départ immédiat vers la
+        // salle suivante sans visiter la salle d'arrivée.
+        pretAuDepart = false;
+        tempsSortieZone = -1f;
     }
 
     void ActualiserMouvementPortes()
@@ -157,8 +170,16 @@ public class AscenseurAutomatique : MonoBehaviour
         voyageEnCours = true;
         pretAuDepart = false; // consommé : il faudra ressortir pour relancer
         tempsSortieZone = -1f; // ré-arme le chrono de présence dans la salle
-        estOuvert = false;
 
+        // Fenêtre d'embarquement : les portes RESTENT ouvertes le temps que le
+        // joueur entre dans la cabine. Sans ça, le voyage se déclenche dès que le
+        // joueur s'approche (distanceDepartVoyage) et les portes se referment
+        // avant qu'il ait pu entrer.
+        estOuvert = true;
+        yield return new WaitForSeconds(tempsEmbarquement);
+
+        // Maintenant on ferme les portes, puis on attend la fin de fermeture.
+        estOuvert = false;
         yield return new WaitForSeconds(2.5f);
 
         if (musiqueAttente) musiqueAttente.Play();

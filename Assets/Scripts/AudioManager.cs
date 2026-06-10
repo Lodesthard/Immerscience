@@ -48,6 +48,36 @@ public class AudioManager : MonoBehaviour
         _isPlayRequestedThisFrame = false;
     }
 
+    private Coroutine _fadeRoutine;
+
+    // Arrête la musique de la creepy zone avec un fondu. Appelé quand le joueur
+    // quitte la zone (ex. téléportation vers la salle 3).
+    public void StopMusic(float fadeTime = 1.5f)
+    {
+        // Remet le mix en mode normal quoi qu'il arrive.
+        if (normalSnapshot != null) normalSnapshot.TransitionTo(fadeTime);
+
+        if (musicSource == null || !musicSource.isPlaying) return;
+
+        if (_fadeRoutine != null) StopCoroutine(_fadeRoutine);
+        _fadeRoutine = StartCoroutine(FadeOutAndStop(fadeTime));
+    }
+
+    private IEnumerator FadeOutAndStop(float fadeTime)
+    {
+        float startVol = musicSource.volume;
+        float t = 0f;
+        while (t < fadeTime)
+        {
+            t += Time.deltaTime;
+            musicSource.volume = Mathf.Lerp(startVol, 0f, t / fadeTime);
+            yield return null;
+        }
+        musicSource.Stop();
+        musicSource.volume = startVol; // restaure pour un futur StartMusic
+        _fadeRoutine = null;
+    }
+
     public void StartCreepyDistortion()
     {
         Debug.Log("🎵 → CREEPY DISTORTION");
